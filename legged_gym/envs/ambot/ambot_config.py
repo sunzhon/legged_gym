@@ -77,7 +77,7 @@ class AmbotRoughCfg( LeggedRobotCfg ):
         episode_length_s = 20 # episode length in seconds
 
 
-    class commands:
+    class commands(LeggedRobotCfg.commands):
         '''
         operation commands
         '''
@@ -116,13 +116,12 @@ class AmbotRoughCfg( LeggedRobotCfg ):
         replace_cylinder_with_capsule = True # replace collision cylinders with capsules, leads to faster/more stable simulation
   
 
-    class domain_rand:
+    class domain_rand(LeggedRobotCfg.domain_rand):
         randomize_base_mass = True
         added_mass_range = [-1, 1]
         push_robots = True
         push_interval_s = 15
         max_push_vel_xy = 0.2
-
 
 
     class rewards( LeggedRobotCfg.rewards ):

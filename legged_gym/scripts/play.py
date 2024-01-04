@@ -37,9 +37,11 @@ from legged_gym.utils import  get_args, export_policy_as_jit, task_registry, Log
 
 import numpy as np
 import torch
+import pdb
 
 
 def play(args):
+    #1) Get configuration of env and trainning  
     env_cfg, train_cfg = task_registry.get_cfgs(name=args.task)
     # override some parameters for testing
     env_cfg.env.num_envs = min(env_cfg.env.num_envs, 50)
@@ -50,10 +52,11 @@ def play(args):
     env_cfg.domain_rand.randomize_friction = False
     env_cfg.domain_rand.push_robots = False
 
-    # prepare environment
+    #2) Prepare environment
     env, _ = task_registry.make_env(name=args.task, args=args, env_cfg=env_cfg)
     obs = env.get_observations()
-    # load policy
+    
+    #3) Load policy
     train_cfg.runner.resume = True
     ppo_runner, train_cfg = task_registry.make_alg_runner(env=env, name=args.task, args=args, train_cfg=train_cfg)
     policy = ppo_runner.get_inference_policy(device=env.device)
@@ -64,6 +67,7 @@ def play(args):
         export_policy_as_jit(ppo_runner.alg.actor_critic, path)
         print('Exported policy as jit script to: ', path)
 
+    #4) Init logging
     logger = Logger(env.dt)
     robot_index = 0 # which robot is used for logging
     joint_index = 1 # which joint is used for logging
@@ -74,12 +78,13 @@ def play(args):
     camera_direction = np.array(env_cfg.viewer.lookat) - np.array(env_cfg.viewer.pos)
     img_idx = 0
 
+    #5) Step
     for i in range(10*int(env.max_episode_length)):
         actions = policy(obs.detach())
         obs, _, rews, dones, infos = env.step(actions.detach())
         if RECORD_FRAMES:
             if i % 2:
-                filename = os.path.join(LEGGED_GYM_ROOT_DIR, 'logs', train_cfg.runner.experiment_name, 'exported', 'frames', f"{img_idx}.png")
+                filename = os.path.join(LEGGED_GYM_ROOT_DIR, 'logs', train_cfg.runner.experiment_name, 'exported', 'frames', "{img_idx}.png")
                 env.gym.write_viewer_image_to_file(env.viewer, filename)
                 img_idx += 1 
         if MOVE_CAMERA:
@@ -115,7 +120,7 @@ def play(args):
 
 if __name__ == '__main__':
     EXPORT_POLICY = True
-    RECORD_FRAMES = False
+    RECORD_FRAMES = True
     MOVE_CAMERA = False
     args = get_args()
     play(args)

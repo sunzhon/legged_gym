@@ -76,6 +76,8 @@ class AnymalCRoughCfg( LeggedRobotCfg ):
         terminate_after_contacts_on = ["base"]
         self_collisions = 1 # 1 to disable, 0 to enable...bitwise filter
 
+
+
     class domain_rand( LeggedRobotCfg.domain_rand):
         randomize_base_mass = True
         added_mass_range = [-5., 5.]

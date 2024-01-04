@@ -1,0 +1,1793 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+	name="ambot_model_sim">
+	<link
+		name="base_link">
+		<inertial>
+			<origin
+				xyz="-0.0072192 1.7929E-05 0.053303"
+				rpy="0 0 0" />
+			<mass
+				value="0.56788" />
+			<inertia
+				ixx="0.00019704"
+				ixy="4.9225E-08"
+				ixz="2.2788E-07"
+				iyy="0.00017416"
+				iyz="6.512E-12"
+				izz="0.0001765" />
+		</inertial>
+		<visual>
+			<origin
+				xyz="0 0 0"
+				rpy="0 0 0" />
+			<geometry>
+				<mesh
+					filename="package://ambot_model_sim/meshes/base_link.STL" />
+			</geometry>
+			<material
+				name="AL">
+				<color
+					rgba="0.89804 0.91765 0.92941 1" />
+			</material>
+		</visual>
+		<collision>
+			<origin
+				xyz="0 0 0.013"
+				rpy="0 0 0" />
+			<geometry>
+				<box size="0.041 0.037 0.05"/>
+			</geometry>
+		</collision>
+		<!--left motor-->
+		<collision>
+			<origin
+				xyz="0 0.0355 0.0604"
+				rpy="0 0 0" />
+			<geometry>
+				<box size="0.041 0.060 0.041"/>
+			</geometry>
+		</collision>
+		<!--right motor-->
+		<collision>
+			<origin
+				xyz="0 -0.0355 0.0604"
+				rpy="0 0 0" />
+			<geometry>
+				<box size="0.041 0.060 0.041"/>
+			</geometry>
+		</collision>
+		<collision>
+			<origin
+				xyz="0.052 0 0.06035"
+				rpy="0 0 0" />
+			<geometry>
+				<box size="0.045 0.0356 0.0356"/>
+			</geometry>
+		</collision>
+		<collision>
+			<origin
+				xyz="-0.0575 0 0.06035"
+				rpy="0 0 0" />
+			<geometry>
+				<box size="0.060 0.041 0.041"/>
+			</geometry>
+		</collision>
+	</link>
+	<link
+		name="FL1_LINK">
+		<inertial>
+			<origin
+				xyz="-1.0577E-05 0.013265 -0.069565"
+				rpy="0 0 0" />
+			<mass
+				value="0.14912" />
+			<inertia
+				ixx="4.5576E-05"
+				ixy="5.3711E-07"
+				ixz="-5.2525E-13"
+				iyy="3.201E-05"
+				iyz="3.8531E-12"
+				izz="5.5459E-05" />
+		</inertial>
+		<visual>
+			<origin
+				xyz="0 0 0"
+				rpy="0 0 0" />
+			<geometry>
+				<mesh
+					filename="package://ambot_model_sim/meshes/FL1_LINK.STL" />
+			</geometry>
+			<material
+				name="A">
+				<color
+					rgba="0.019608 0.019608 0.019608 1" />
+			</material>
+		</visual>
+		<collision>
+			<origin
+				xyz="0 0.015 -0.068"
+				rpy="0 0 0" />
+			<geometry>
+				<box size="0.041 0.060 0.041"/>
+			</geometry>
+		</collision>
+	</link>
+	<joint
+		name="FL1_JOINT"
+		type="revolute">
+		<origin
+			xyz="0 0.051 0.0824"
+			rpy="0 0 0" />
+		<parent
+			link="base_link" />
+		<child
+			link="FL1_LINK" />
+		<axis
+			xyz="0 0 1" />
+		<limit
+			lower="-3.14159"
+			upper="3.14159"
+			effort="80"
+			velocity="15" 
+			command_effort="80" 
+			current="10"
+			gear_velocity="10"
+			/> 
+		<dynamics damping="0.0" friction="0.0"/>  
+	</joint>
+	<link
+		name="FL2_LINK">
+		<inertial>
+			<origin
+				xyz="-0.0252 0.071262 0.012145"
+				rpy="0 0 0" />
+			<mass
+				value="0.16287" />
+			<inertia
+				ixx="7.2988E-05"
+				ixy="-5.2526E-13"
+				ixz="3.8531E-12"
+				iyy="4.59E-05"
+				iyz="5.3711E-07"
+				izz="4.8861E-05" />
+		</inertial>
+		<visual>
+			<origin
+				xyz="0 0 0"
+				rpy="0 0 0" />
+			<geometry>
+				<mesh
+					filename="package://ambot_model_sim/meshes/FL2_LINK.STL" />
+			</geometry>
+			<material
+				name="A">
+				<color
+					rgba="1 1 1 1" />
+			</material>
+		</visual>
+		<collision>
+			<origin
+				xyz="-0.024 0.075 0.015"
+				rpy="0 0 0" />
+			<geometry>
+				<box size="0.041 0.041 0.060"/>
+			</geometry>
+		</collision>
+	</link>
+	<joint
+		name="FL2_JOINT"
+		type="revolute">
+		<origin
+			xyz="0.0252 -1.4041E-05 -0.0694"
+			rpy="0 0 0" />
+		<parent
+			link="FL1_LINK" />
+		<child
+			link="FL2_LINK" />
+		<axis
+			xyz="1 0 0" />
+		<limit
+			lower="-3.14159"
+			upper="3.14159"
+			effort="80"
+			velocity="15" 
+			command_effort="80" 
+			current="10"
+			gear_velocity="10"
+			/> 
+		<dynamics damping="0.0" friction="0.0"/>  
+	</joint>
+	<link
+		name="FL3_LINK">
+		<inertial>
+			<origin
+				xyz="-1.1199E-05 0.021089 -0.013973"
+				rpy="0 0 0" />
+			<mass
+				value="0.14082" />
+			<inertia
+				ixx="4.4846E-05"
+				ixy="-7.8684E-13"
+				ixz="-5.3711E-07"
+				iyy="5.3296E-05"
+				iyz="2.4955E-08"
+				izz="3.048E-05" />
+		</inertial>
+		<visual>
+			<origin
+				xyz="0 0 0"
+				rpy="0 0 0" />
+			<geometry>
+				<mesh
+					filename="package://ambot_model_sim/meshes/FL3_LINK.STL" />
+			</geometry>
+			<material
+				name="A">
+				<color
+					rgba="0.89804 0.91765 0.92941 1" />
+			</material>
+		</visual>
+		<collision>
+			<origin
+				xyz="0 0.022 -0.0155"
+				rpy="0 0 0" />
+			<geometry>
+				<box size="0.041 0.041 0.060"/>
+			</geometry>
+		</collision>
+	</link>
+	<joint
+		name="FL3_JOINT"
+		type="revolute">
+		<origin
+			xyz="-0.0252 0.10021 -1.4041E-05"
+			rpy="0 0 0" />
+		<parent
+			link="FL2_LINK" />
+		<child
+			link="FL3_LINK" />
+		<axis
+			xyz="0 1 0" />
+		<limit
+			lower="-3.14159"
+			upper="3.14159"
+			effort="80"
+			velocity="15" 
+			command_effort="80" 
+			current="10"
+			gear_velocity="10"
+			/> 
+		<dynamics damping="0.0" friction="0.0"/>  
+	</joint>
+	<link
+		name="FL4_LINK">
+		<inertial>
+			<origin
+				xyz="-0.0253000000007098 0.0662040642638314 -1.40411115238936E-05"
+				rpy="0 0 0" />
+			<mass
+				value="0.0753829969965019" />
+			<inertia
+				ixx="3.430873341814E-05"
+				ixy="2.49411774392775E-15"
+				ixz="-2.71165864549092E-14"
+				iyy="1.48258857291574E-05"
+				iyz="3.95784402417202E-15"
+				izz="4.47639226162227E-05" />
+		</inertial>
+		<visual>
+			<origin
+				xyz="0 0 0"
+				rpy="0 0 0" />
+			<geometry>
+				<mesh
+					filename="package://ambot_model_sim/meshes/FL4_LINK.STL" />
+			</geometry>
+			<material
+				name="A">
+				<color
+					rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+			</material>
+		</visual>
+		<collision>
+			<origin
+				xyz="-0.024 0.078 0.0"
+				rpy="0 0 0" />
+			<geometry>
+        <box size="0.01 0.030 0.01"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint
+	  name="FL4_JOINT"
+	  type="revolute">
+	  <origin
+		  xyz="0.0252 0.0222 2.8082E-05"
+		  rpy="0 0 0" />
+	  <parent
+		  link="FL3_LINK" />
+	  <child
+		  link="FL4_LINK" />
+	  <axis
+		  xyz="1 0 0" />
+	  <limit
+		  lower="-3.14159"
+		  upper="3.14159"
+		  effort="80"
+		  velocity="15" 
+		  command_effort="80" 
+		  current="10"
+		  gear_velocity="10"
+		  /> 
+	  <dynamics damping="0.0" friction="0.0"/>  
+  </joint>
+
+  <!-- Foot link -->  
+  <link name="FL_FOOT">    
+	  <visual>
+		  <origin xyz="-0.02530 0.1190 0"/>      
+		  <geometry>        
+			  <sphere radius="0.025"/>      
+		  </geometry>  
+		  <material
+			  name="A">
+			  <color
+				  rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+		  </material>
+	  </visual>
+	  <collision>      
+		  <origin xyz="-0.02530 0.1190 0"/>      
+		  <geometry>        
+			  <sphere radius="0.025"/>      
+		  </geometry>    
+	  </collision> 
+	  <inertial>
+		  <origin rpy="0 0 0" xyz="-0.02530 0.1190 0"/>
+		  <mass value="0.05"/>
+		  <inertia ixx="0.001" ixy="-2.63048e-07" ixz="6.815581e-06" iyy="0.001" iyz="-6.815583e-06" izz="8.319196e-06"/>
+	  </inertial> 
+  </link>
+
+  <joint name="FL_TO_FOOT" type="fixed" dont_collapse="true">    
+	  <parent link="FL4_LINK"/>    
+	  <child link="FL_FOOT"/>    
+	  <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>  
+  </joint>    
+
+  <link
+	  name="FR1_LINK">
+	  <inertial>
+		  <origin
+			  xyz="-1.0577E-05 -0.013265 -0.069565"
+			  rpy="0 0 0" />
+		  <mass
+			  value="0.14912" />
+		  <inertia
+			  ixx="4.5576E-05"
+			  ixy="-5.3711E-07"
+			  ixz="5.2525E-13"
+			  iyy="3.201E-05"
+			  iyz="3.8531E-12"
+			  izz="5.5459E-05" />
+	  </inertial>
+	  <visual>
+		  <origin
+			  xyz="0 0 0"
+			  rpy="0 0 0" />
+		  <geometry>
+			  <mesh
+				  filename="package://ambot_model_sim/meshes/FR1_LINK.STL" />
+		  </geometry>
+		  <material
+			  name="A">
+			  <color
+				  rgba="0.89804 0.91765 0.92941 1" />
+		  </material>
+	  </visual>
+	  <collision>
+		  <origin
+			  xyz="0 -0.015 -0.068"
+			  rpy="0 0 0" />
+		  <geometry>
+			  <box size="0.041 0.060 0.041"/>
+		  </geometry>
+	  </collision>
+  </link>
+  <joint
+	  name="FR1_JOINT"
+	  type="revolute">
+	  <origin
+		  xyz="0 -0.051 0.0824"
+		  rpy="0 0 0" />
+	  <parent
+		  link="base_link" />
+	  <child
+		  link="FR1_LINK" />
+	  <axis
+		  xyz="0 0 1" />
+	  <limit
+		  lower="-3.14159"
+		  upper="3.14159"
+		  effort="80"
+		  velocity="15" 
+		  command_effort="80" 
+		  current="10"
+		  gear_velocity="10"
+		  /> 
+	  <dynamics damping="0.0" friction="0.0"/>  
+  </joint>
+  <link
+	  name="FR2_LINK">
+	  <inertial>
+		  <origin
+			  xyz="-0.0252 -0.071278 0.012145"
+			  rpy="0 0 0" />
+		  <mass
+			  value="0.16287" />
+		  <inertia
+			  ixx="7.2988E-05"
+			  ixy="-5.2525E-13"
+			  ixz="-3.8531E-12"
+			  iyy="4.59E-05"
+			  iyz="-5.3711E-07"
+			  izz="4.8861E-05" />
+	  </inertial>
+	  <visual>
+		  <origin
+			  xyz="0 0 0"
+			  rpy="0 0 0" />
+		  <geometry>
+			  <mesh
+				  filename="package://ambot_model_sim/meshes/FR2_LINK.STL" />
+		  </geometry>
+		  <material
+			  name="A">
+			  <color
+				  rgba="1 1 1 1" />
+		  </material>
+	  </visual>
+	  <collision>
+		  <origin
+			  xyz="-0.024 -0.075 0.015"
+			  rpy="0 0 0" />
+		  <geometry>
+			  <box size="0.041 0.041 0.060"/>
+		  </geometry>
+	  </collision>
+  </link>
+  <joint
+	  name="FR2_JOINT"
+	  type="revolute">
+	  <origin
+		  xyz="0.0252 1.4041E-05 -0.0694"
+		  rpy="0 0 0" />
+	  <parent
+		  link="FR1_LINK" />
+	  <child
+		  link="FR2_LINK" />
+	  <axis
+		  xyz="1 0 0" />
+	  <limit
+		  lower="-3.14159"
+		  upper="3.14159"
+		  effort="80"
+		  velocity="15" 
+		  command_effort="80" 
+		  current="10"
+		  gear_velocity="10"
+		  /> 
+	  <dynamics damping="0.0" friction="0.0"/>  
+  </joint>
+  <link
+	  name="FR3_LINK">
+	  <inertial>
+		  <origin
+			  xyz="-1.1201E-05 -0.021089 -0.013973"
+			  rpy="0 0 0" />
+		  <mass
+			  value="0.14082" />
+		  <inertia
+			  ixx="4.4846E-05"
+			  ixy="-7.8675E-13"
+			  ixz="-5.3711E-07"
+			  iyy="5.3296E-05"
+			  iyz="-2.4963E-08"
+			  izz="3.048E-05" />
+	  </inertial>
+	  <visual>
+		  <origin
+			  xyz="0 0 0"
+			  rpy="0 0 0" />
+		  <geometry>
+			  <mesh
+				  filename="package://ambot_model_sim/meshes/FR3_LINK.STL" />
+		  </geometry>
+		  <material
+			  name="A">
+			  <color
+				  rgba="0.89804 0.91765 0.92941 1" />
+		  </material>
+	  </visual>
+	  <collision>
+		  <origin
+			  xyz="0 -0.022 -0.0155"
+			  rpy="0 0 0" />
+		  <geometry>
+			  <box size="0.041 0.041 0.060"/>
+		  </geometry>
+	  </collision>
+  </link>
+  <joint
+	  name="FR3_JOINT"
+	  type="revolute">
+	  <origin
+		  xyz="-0.0252 -0.10021 -1.4041E-05"
+		  rpy="0 0 0" />
+	  <parent
+		  link="FR2_LINK" />
+	  <child
+		  link="FR3_LINK" />
+	  <axis
+		  xyz="0 -1 0" />
+	  <limit
+		  lower="-3.14159"
+		  upper="3.14159"
+		  effort="80"
+		  velocity="15" 
+		  command_effort="80" 
+		  current="10"
+		  gear_velocity="10"
+		  /> 
+	  <dynamics damping="0.0" friction="0.0"/>  
+  </joint>
+  <link
+	  name="FR4_LINK">
+	  <inertial>
+		  <origin
+			  xyz="-0.0252999999993032 -0.0662040642643617 -1.40411115240324E-05"
+			  rpy="0 0 0" />
+		  <mass
+			  value="0.0753829969965019" />
+		  <inertia
+			  ixx="3.43087334181399E-05"
+			  ixy="2.49000423218722E-15"
+			  ixz="2.71167487151664E-14"
+			  iyy="1.48258857291574E-05"
+			  iyz="-3.95750984296237E-15"
+			  izz="4.47639226162226E-05" />
+	  </inertial>
+	  <visual>
+		  <origin
+			  xyz="0 0 0"
+			  rpy="0 0 0" />
+		  <geometry>
+			  <mesh
+				  filename="package://ambot_model_sim/meshes/FR4_LINK.STL" />
+		  </geometry>
+		  <material
+			  name="A">
+			  <color
+				  rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+		  </material>
+	  </visual>
+	  <collision>
+		  <origin
+			  xyz="-0.024 -0.078 0.0"
+			  rpy="0 0 0" />
+		  <geometry>
+			  <box size="0.01 0.030 0.01"/>
+		  </geometry>
+	  </collision>
+  </link>
+  <joint
+	  name="FR4_JOINT"
+	  type="revolute">
+	  <origin
+		  xyz="0.0252 -0.0222 2.8082E-05"
+		  rpy="0 0 0" />
+	  <parent
+		  link="FR3_LINK" />
+	  <child
+		  link="FR4_LINK" />
+	  <axis
+		  xyz="1 0 0" />
+	  <limit
+		  lower="-3.14159"
+		  upper="3.14159"
+		  effort="80"
+		  velocity="15" 
+		  command_effort="80" 
+		  current="10"
+		  gear_velocity="10"
+		  /> 
+	  <dynamics damping="0.0" friction="0.0"/>  
+  </joint>
+
+  <!-- Foot link -->  
+  <link name="FR_FOOT">    
+	  <visual>
+		  <origin xyz="-0.02530 -0.1190 0"/>      
+		  <geometry>        
+			  <sphere radius="0.025"/>      
+		  </geometry>  
+		  <material
+			  name="A">
+			  <color
+				  rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+		  </material>
+	  </visual>
+	  <collision>      
+		  <origin xyz="-0.02530 -0.1190 0"/>      
+		  <geometry>        
+			  <sphere radius="0.025"/>      
+		  </geometry>    
+	  </collision> 
+	  <inertial>
+		  <origin rpy="0 0 0" xyz="-0.02530 -0.1190 0"/>
+		  <mass value="0.05"/>
+		  <inertia ixx="0.001" ixy="-2.63048e-07" ixz="6.815581e-06" iyy="0.001" iyz="-6.815583e-06" izz="8.319196e-06"/>
+	  </inertial> 
+  </link>
+
+  <joint name="FR_TO_FOOT" type="fixed" dont_collapse="true">    
+	  <parent link="FR4_LINK"/>    
+	  <child link="FR_FOOT"/>    
+	  <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>  
+  </joint>
+
+  <link
+	  name="HEAD2_LINK">
+	  <inertial>
+		  <origin
+			  xyz="0.052854 1.9632E-05 -0.02331"
+			  rpy="0 0 0" />
+		  <mass
+			  value="0.093763" />
+		  <inertia
+			  ixx="1.7484E-05"
+			  ixy="-6.1699E-09"
+			  ixz="-3.0933E-07"
+			  iyy="2.5926E-05"
+			  iyz="9.9901E-12"
+			  izz="2.0282E-05" />
+	  </inertial>
+	  <visual>
+		  <origin
+			  xyz="0 0 0"
+			  rpy="0 0 0" />
+		  <geometry>
+			  <mesh
+				  filename="package://ambot_model_sim/meshes/HEAD2_LINK.STL" />
+		  </geometry>
+		  <material
+			  name="A">
+			  <color
+				  rgba="0.89804 0.91765 0.92941 1" />
+		  </material>
+	  </visual>
+	  <collision>
+		  <origin
+			  xyz="0.0513 0 -0.023"
+			  rpy="0 0 0" />
+		  <geometry>
+			  <box size="0.045 0.0356 0.0356"/>
+		  </geometry>
+	  </collision>
+  </link>
+  <joint
+	  name="HEAD2_JOINT"
+	  type="revolute">
+	  <origin
+		  xyz="0.065812 0 0.08365"
+		  rpy="0 0 0" />
+	  <parent
+		  link="base_link" />
+	  <child
+		  link="HEAD2_LINK" />
+	  <axis
+		  xyz="0 0 1" />
+	  <limit
+		  lower="-3.14159"
+		  upper="3.14159"
+		  effort="80"
+		  velocity="15" 
+		  command_effort="80" 
+		  current="10"
+		  gear_velocity="10"
+		  /> 
+	  <dynamics damping="0.0" friction="0.0"/>  
+  </joint>
+  <link
+	  name="HEAD1_LINK">
+	  <inertial>
+		  <origin
+			  xyz="0.0148535095184353 1.39693829420695E-10 -0.0227582124062495"
+			  rpy="0 0 0" />
+		  <mass
+			  value="0.0128608784456393" />
+		  <inertia
+			  ixx="3.37863718117877E-06"
+			  ixy="-3.45517326553958E-15"
+			  ixz="-1.0234725253828E-10"
+			  iyy="3.64111475652834E-06"
+			  iyz="-1.73952253493372E-17"
+			  izz="1.66261496718536E-06" />
+	  </inertial>
+	  <visual>
+		  <origin
+			  xyz="0 0 0"
+			  rpy="0 0 0" />
+		  <geometry>
+			  <mesh
+				  filename="package://ambot_model_sim/meshes/HEAD1_LINK.STL" />
+		  </geometry>
+		  <material
+			  name="A">
+			  <color
+				  rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+		  </material>
+	  </visual>
+	  <collision>
+		  <origin
+			  xyz="0.0513 0 -0.023"
+			  rpy="0 0 0" />
+		  <geometry>
+			  <box size="0.045 0.0356 0.0356"/>
+		  </geometry>
+	  </collision>
+  </link>
+  <joint
+	  name="HEAD1_JOINT"
+	  type="revolute">
+	  <origin
+		  xyz="0.0718 0 -0.0001"
+		  rpy="0 0 0" />
+	  <parent
+		  link="HEAD2_LINK" />
+	  <child
+		  link="HEAD1_LINK" />
+	  <axis
+		  xyz="0 0 1" />
+	  <limit
+		  lower="-3.14159"
+		  upper="3.14159"
+		  effort="80"
+		  velocity="15" 
+		  command_effort="80" 
+		  current="10"
+		  gear_velocity="10"
+		  /> 
+	  <dynamics damping="0.0" friction="0.0"/>  
+  </joint>
+  <link
+	  name="SPINE_LINK">
+	  <inertial>
+		  <origin
+			  xyz="-0.112785958888 -3.08780778723872E-16 -0.0233499999999768"
+			  rpy="0 0 0" />
+		  <mass
+			  value="0.103071283080016" />
+		  <inertia
+			  ixx="3.81209960942315E-05"
+			  ixy="-4.49393428156638E-22"
+			  ixz="-1.52191878234228E-18"
+			  iyy="9.44367833460431E-05"
+			  iyz="3.84077898124163E-22"
+			  izz="7.62238168208059E-05" />
+	  </inertial>
+	  <visual>
+		  <origin
+			  xyz="0.1418 0 0"
+			  rpy="0 0 0" />
+		  <geometry>
+			  <mesh
+				  filename="package://ambot_model_sim/meshes/SPINE_LINK.STL" />
+		  </geometry>
+		  <material
+			  name="A">
+			  <color
+				  rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+		  </material>
+	  </visual>
+	  <collision>
+		  <origin
+			  xyz="-0.1128 0 -0.023"
+			  rpy="0 0 0" />
+		  <geometry>
+			  <box size="0.1576 0.0356 0.045"/>
+		  </geometry>
+	  </collision>
+  </link>
+  <joint
+	  name="SPINE1_JOINT"
+	  type="revolute">
+	  <origin
+		  xyz="-0.076014 0 0.0856"
+		  rpy="0 0 0" />
+	  <parent
+		  link="base_link" />
+	  <child
+		  link="SPINE_LINK" />
+	  <axis
+		  xyz="0 0 1" />
+	  <limit
+		  lower="-3.14159"
+		  upper="3.14159"
+		  effort="80"
+		  velocity="15" 
+		  command_effort="80" 
+		  current="10"
+		  gear_velocity="10"
+		  /> 
+	  <dynamics damping="0.0" friction="0.0"/>
+  </joint>
+
+  <link
+	  name="BATTERY_LINK">
+	  <inertial>
+		  <origin
+			  xyz="0 0 0"
+			  rpy="0 0 0" />
+		  <mass
+			  value="0.650" />
+		  <inertia
+			  ixx="0.00077"
+			  ixy="0.000914"
+			  ixz="-1.52191878234228E-18"
+			  iyy="0.0052"
+			  iyz="0.000284"
+			  izz="0.00506" />
+	  </inertial>
+	  <visual>
+		  <origin
+			  xyz="0.0 0 0"
+			  rpy="0 0 0" />
+		  <geometry>
+			  <box size="0.148 0.046 0.038"/>
+		  </geometry>
+		  <material
+			  name="A">
+			  <color
+				  rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+		  </material>
+	  </visual>
+	  <collision>
+		  <origin
+			  xyz="0.0 0 0"
+			  rpy="0 0 0" />
+		  <geometry>
+			  <box size="0.148 0.046 0.038"/>
+		  </geometry>
+	  </collision>
+  </link>
+
+  <joint
+	  name="FIX_JOINT"
+	  type="fixed">
+	  <origin
+		  xyz="-0.112812 0 -0.065"
+		  rpy="0 0 0" />
+	  <parent
+		  link="SPINE_LINK" />
+	  <child
+		  link="BATTERY_LINK" />
+	  <axis
+		  xyz="0 0 1" />
+	  <limit
+		  lower="0"
+		  upper="0"
+		  effort="0"
+		  velocity="0" />
+  </joint>
+
+  <link
+	  name="SPINE2_LINK">
+	  <inertial>
+		  <origin
+			  xyz="-0.069295 -1.1371E-05 -0.032236"
+			  rpy="0 0 0" />
+		  <mass
+			  value="0.57179" />
+		  <inertia
+			  ixx="0.00019717"
+			  ixy="6.1567E-08"
+			  ixz="-2.2788E-07"
+			  iyy="0.00017428"
+			  iyz="-6.5119E-12"
+			  izz="0.00017674" />
+	  </inertial>
+	  <visual>
+		  <origin
+			  xyz="0 0 0"
+			  rpy="0 0 0" />
+		  <geometry>
+			  <mesh
+				  filename="package://ambot_model_sim/meshes/SPINE2_LINK.STL" />
+		  </geometry>
+		  <material
+			  name="A">
+			  <color
+				  rgba="0.89804 0.91765 0.92941 1" />
+		  </material>
+	  </visual>
+	  <collision>
+		  <origin
+			  xyz="-0.076 0 -0.073"
+			  rpy="0 0 0" />
+		  <geometry>
+			  <box size="0.041 0.037 0.05"/>
+		  </geometry>
+	  </collision>
+	  <!--left motor-->
+	  <collision>
+		  <origin
+			  xyz="-0.076 0.0355 -0.0256"
+			  rpy="0 0 0" />
+		  <geometry>
+			  <box size="0.041 0.060 0.041"/>
+		  </geometry>
+	  </collision>
+	  <!--right motor-->
+	  <collision>
+		  <origin
+			  xyz="-0.076 -0.0355 -0.0256"
+			  rpy="0 0 0" />
+		  <geometry>
+			  <box size="0.041 0.060 0.041"/>
+		  </geometry>
+	  </collision>
+	  <collision>
+		  <origin
+			  xyz="-0.1285 0 -0.02565"
+			  rpy="0 0 0" />
+		  <geometry>
+			  <box size="0.045 0.0356 0.0356"/>
+		  </geometry>
+	  </collision>
+	  <collision>
+		  <origin
+			  xyz="-0.018 0 -0.02565"
+			  rpy="0 0 0" />
+		  <geometry>
+			  <box size="0.060 0.041 0.041"/>
+		  </geometry>
+	  </collision>
+  </link>
+  <joint
+	  name="SPINE2_JOINT"
+	  type="revolute">
+	  <origin
+		  xyz="-0.2256 0 0.00195"
+		  rpy="0 0 0" />
+	  <parent
+		  link="SPINE_LINK" />
+	  <child
+		  link="SPINE2_LINK" />
+	  <axis
+		  xyz="0 0 1" />
+	  <limit
+		  lower="-3.14159"
+		  upper="3.14159"
+		  effort="80"
+		  velocity="15" 
+		  command_effort="80" 
+		  current="10"
+		  gear_velocity="10"
+		  /> 
+	  <dynamics damping="0.0" friction="0.0"/>  
+  </joint>
+  <link
+	  name="HL1_LINK">
+	  <inertial>
+		  <origin
+			  xyz="-1.05771180524405E-05 0.0132654601574521 -0.069565480566841"
+			  rpy="0 0 0" />
+		  <mass
+			  value="0.149115595818189" />
+		  <inertia
+			  ixx="4.55758083562384E-05"
+			  ixy="5.37110126541777E-07"
+			  ixz="-5.25253727939667E-13"
+			  iyy="3.20102348934197E-05"
+			  iyz="3.85309005142872E-12"
+			  izz="5.54585973240775E-05" />
+	  </inertial>
+	  <visual>
+		  <origin
+			  xyz="0 0 0"
+			  rpy="0 0 0" />
+		  <geometry>
+			  <mesh
+				  filename="package://ambot_model_sim/meshes/HL1_LINK.STL" />
+		  </geometry>
+		  <material
+			  name="A">
+			  <color
+				  rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+		  </material>
+	  </visual>
+	  <collision>
+		  <origin
+			  xyz="0 0.015 -0.068"
+			  rpy="0 0 0" />
+		  <geometry>
+			  <box size="0.041 0.060 0.041"/>
+		  </geometry>
+	  </collision>
+  </link>
+  <joint
+	  name="HL1_JOINT"
+	  type="revolute">
+	  <origin
+		  xyz="-0.076014 0.051 -0.0032"
+		  rpy="0 0 0" />
+	  <parent
+		  link="SPINE2_LINK" />
+	  <child
+		  link="HL1_LINK" />
+	  <axis
+		  xyz="0 0 1" />
+	  <limit
+		  lower="-3.14159"
+		  upper="3.14159"
+		  effort="80"
+		  velocity="15" 
+		  command_effort="80" 
+		  current="10"
+		  gear_velocity="10"
+		  /> 
+	  <dynamics damping="0.0" friction="0.0"/>  
+  </joint>
+  <link
+	  name="HL2_LINK">
+	  <inertial>
+		  <origin
+			  xyz="-0.0251999999062681 0.0937865916689117 0.0118538068190398"
+			  rpy="0 0 0" />
+		  <mass
+			  value="0.166873564364499" />
+		  <inertia
+			  ixx="8.85185054689428E-05"
+			  ixy="-5.25261127744957E-13"
+			  ixz="3.85308970709481E-12"
+			  iyy="4.59783608946718E-05"
+			  iyz="5.37110126538201E-07"
+			  izz="6.4318688931619E-05" />
+	  </inertial>
+	  <visual>
+		  <origin
+			  xyz="0 0 0"
+			  rpy="0 0 0" />
+		  <geometry>
+			  <mesh
+				  filename="package://ambot_model_sim/meshes/HL2_LINK.STL" />
+		  </geometry>
+		  <material
+			  name="A">
+			  <color
+				  rgba="1 1 1 1" />
+		  </material>
+	  </visual>
+	  <collision>
+		  <origin
+			  xyz="-0.024 0.1 0.015"
+			  rpy="0 0 0" />
+		  <geometry>
+			  <box size="0.041 0.041 0.060"/>
+		  </geometry>
+	  </collision>
+  </link>
+  <joint
+	  name="HL2_JOINT"
+	  type="revolute">
+	  <origin
+		  xyz="0.0252 -1.4041E-05 -0.0694"
+		  rpy="0 0 0" />
+	  <parent
+		  link="HL1_LINK" />
+	  <child
+		  link="HL2_LINK" />
+	  <axis
+		  xyz="1 0 0" />
+	  <limit
+		  lower="-3.14159"
+		  upper="3.14159"
+		  effort="80"
+		  velocity="15" 
+		  command_effort="80" 
+		  current="10"
+		  gear_velocity="10"
+		  /> 
+	  <dynamics damping="0.0" friction="0.0"/>  
+  </joint>
+  <link
+	  name="HL3_LINK">
+	  <inertial>
+		  <origin
+			  xyz="-1.11986618887283E-05 0.0210886893382483 -0.0139733231144062"
+			  rpy="0 0 0" />
+		  <mass
+			  value="0.140823246480586" />
+		  <inertia
+			  ixx="4.48458889111508E-05"
+			  ixy="-7.8684330088224E-13"
+			  ixz="-5.37107696648494E-07"
+			  iyy="5.32958595107274E-05"
+			  iyz="2.49548169241301E-08"
+			  izz="3.04800781289404E-05" />
+	  </inertial>
+	  <visual>
+		  <origin
+			  xyz="0 0 0"
+			  rpy="0 0 0" />
+		  <geometry>
+			  <mesh
+				  filename="package://ambot_model_sim/meshes/HL3_LINK.STL" />
+		  </geometry>
+		  <material
+			  name="A">
+			  <color
+				  rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+		  </material>
+	  </visual>
+	  <collision>
+		  <origin
+			  xyz="0 0.022 -0.0155"
+			  rpy="0 0 0" />
+		  <geometry>
+			  <box size="0.041 0.041 0.060"/>
+		  </geometry>
+	  </collision>
+  </link>
+  <joint
+	  name="HL3_JOINT"
+	  type="revolute">
+	  <origin
+		  xyz="-0.0252 0.12521 -1.4041E-05"
+		  rpy="0 0 0" />
+	  <parent
+		  link="HL2_LINK" />
+	  <child
+		  link="HL3_LINK" />
+	  <axis
+		  xyz="0 1 0" />
+	  <limit
+		  lower="-3.14159"
+		  upper="3.14159"
+		  effort="80"
+		  velocity="15" 
+		  command_effort="80" 
+		  current="10"
+		  gear_velocity="10"
+		  /> 
+	  <dynamics damping="0.0" friction="0.0"/>  
+  </joint>
+  <link
+	  name="HL4_LINK">
+	  <inertial>
+		  <origin
+			  xyz="-0.025300000000711 0.0662040642638319 -1.40411115246153E-05"
+			  rpy="0 0 0" />
+		  <mass
+			  value="0.075382996996502" />
+		  <inertia
+			  ixx="3.430873341814E-05"
+			  ixy="2.49448860689944E-15"
+			  ixz="-2.71165695377851E-14"
+			  iyy="1.48258857291574E-05"
+			  iyz="3.95789186826221E-15"
+			  izz="4.47639226162227E-05" />
+	  </inertial>
+	  <visual>
+		  <origin
+			  xyz="0 0 0"
+			  rpy="0 0 0" />
+		  <geometry>
+			  <mesh
+				  filename="package://ambot_model_sim/meshes/HL4_LINK.STL" />
+		  </geometry>
+		  <material
+			  name="A">
+			  <color
+				  rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+		  </material>
+	  </visual>
+	  <collision>
+		  <origin
+			  xyz="-0.024 0.078 0.0"
+			  rpy="0 0 0" />
+		  <geometry>
+			  <box size="0.01 0.030 0.01"/>
+		  </geometry>
+	  </collision>
+  </link>
+  <joint
+	  name="HL4_JOINT"
+	  type="revolute">
+	  <origin
+		  xyz="0.0252 0.0222 2.8082E-05"
+		  rpy="0 0 0" />
+	  <parent
+		  link="HL3_LINK" />
+	  <child
+		  link="HL4_LINK" />
+	  <axis
+		  xyz="1 0 0" />
+	  <limit
+		  lower="-3.14159"
+		  upper="3.14159"
+		  effort="80"
+		  velocity="15" 
+		  command_effort="80" 
+		  current="10"
+		  gear_velocity="10"
+		  /> 
+	  <dynamics damping="0.0" friction="0.0"/>  
+  </joint>
+
+  <!-- Foot link -->  
+  <link name="HL_FOOT">    
+	  <visual>
+		  <origin xyz="-0.02530 0.1190 0"/>      
+		  <geometry>        
+			  <sphere radius="0.025"/>      
+		  </geometry>  
+		  <material
+			  name="A">
+			  <color
+				  rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+		  </material>
+	  </visual>
+	  <collision>      
+		  <origin xyz="-0.02530 0.1190 0"/>      
+		  <geometry>        
+			  <sphere radius="0.025"/>      
+		  </geometry>    
+	  </collision> 
+	  <inertial>
+		  <origin rpy="0 0 0" xyz="-0.02530 0.1190 0"/>
+		  <mass value="0.05"/>
+		  <inertia ixx="0.001" ixy="-2.63048e-07" ixz="6.815581e-06" iyy="0.001" iyz="-6.815583e-06" izz="8.319196e-06"/>
+	  </inertial> 
+  </link>
+
+  <joint name="HL_TO_FOOT" type="fixed" dont_collapse="true">    
+	  <parent link="HL4_LINK"/>    
+	  <child link="HL_FOOT"/>    
+	  <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>  
+  </joint>
+
+  <link
+	  name="HR1_LINK">
+	  <inertial>
+		  <origin
+			  xyz="-1.05771180390346E-05 -0.0132654601574506 -0.0695654807785161"
+			  rpy="0 0 0" />
+		  <mass
+			  value="0.14911559581823" />
+		  <inertia
+			  ixx="4.55758083562391E-05"
+			  ixy="-5.37110126538558E-07"
+			  ixz="5.25253580444053E-13"
+			  iyy="3.20102348934199E-05"
+			  iyz="3.85309004857734E-12"
+			  izz="5.54585973240776E-05" />
+	  </inertial>
+	  <visual>
+		  <origin
+			  xyz="0 0 0"
+			  rpy="0 0 0" />
+		  <geometry>
+			  <mesh
+				  filename="package://ambot_model_sim/meshes/HR1_LINK.STL" />
+		  </geometry>
+		  <material
+			  name="A">
+			  <color
+				  rgba="0.0392156862745098 0.0392156862745098 0.0392156862745098 1" />
+		  </material>
+	  </visual>
+	  <collision>
+		  <origin
+			  xyz="0 -0.015 -0.068"
+			  rpy="0 0 0" />
+		  <geometry>
+			  <box size="0.041 0.060 0.041"/>
+		  </geometry>
+	  </collision>
+  </link>
+  <joint
+	  name="HR1_JOINT"
+	  type="revolute">
+	  <origin
+		  xyz="-0.076014 -0.051 -0.0032"
+		  rpy="0 0 0" />
+	  <parent
+		  link="SPINE2_LINK" />
+	  <child
+		  link="HR1_LINK" />
+	  <axis
+		  xyz="0 0 1" />
+	  <limit
+		  lower="-3.14159"
+		  upper="3.14159"
+		  effort="80"
+		  velocity="15" 
+		  command_effort="80" 
+		  current="10"
+		  gear_velocity="10"
+		  /> 
+	  <dynamics damping="0.0" friction="0.0"/>  
+  </joint>
+  <link
+	  name="HR2_LINK">
+	  <inertial>
+		  <origin
+			  xyz="-0.0252 -0.093787 0.011854"
+			  rpy="0 0 0" />
+		  <mass
+			  value="0.16687" />
+		  <inertia
+			  ixx="8.8519E-05"
+			  ixy="-5.2525E-13"
+			  ixz="-3.8531E-12"
+			  iyy="4.5978E-05"
+			  iyz="-5.3711E-07"
+			  izz="6.4319E-05" />
+	  </inertial>
+	  <visual>
+		  <origin
+			  xyz="0 0 0"
+			  rpy="0 0 0" />
+		  <geometry>
+			  <mesh
+				  filename="package://ambot_model_sim/meshes/HR2_LINK.STL" />
+		  </geometry>
+		  <material
+			  name="A">
+			  <color
+				  rgba="1 1 1 1" />
+		  </material>
+	  </visual>
+	  <collision>
+		  <origin
+			  xyz="-0.024 -0.1 0.015"
+			  rpy="0 0 0" />
+		  <geometry>
+			  <box size="0.041 0.041 0.060"/>
+		  </geometry>
+	  </collision>
+  </link>
+  <joint
+	  name="HR2_JOINT"
+	  type="revolute">
+	  <origin
+		  xyz="0.0252 1.4041E-05 -0.0694"
+		  rpy="0 0 0" />
+	  <parent
+		  link="HR1_LINK" />
+	  <child
+		  link="HR2_LINK" />
+	  <axis
+		  xyz="1 0 0" />
+	  <limit
+		  lower="-3.14159"
+		  upper="3.14159"
+		  effort="80"
+		  velocity="15" 
+		  command_effort="80" 
+		  current="10"
+		  gear_velocity="10"
+		  /> 
+	  <dynamics damping="0.0" friction="0.0"/>  
+  </joint>
+  <link
+	  name="HR3_LINK">
+	  <inertial>
+		  <origin
+			  xyz="-1.12012372563419E-05 -0.0210886891161066 -0.0139733231144064"
+			  rpy="0 0 0" />
+		  <mass
+			  value="0.140823246480586" />
+		  <inertia
+			  ixx="4.48458889111508E-05"
+			  ixy="-7.86842983087833E-13"
+			  ixz="-5.37112556428295E-07"
+			  iyy="5.32958595107275E-05"
+			  iyz="-2.49625231151965E-08"
+			  izz="3.04800781289405E-05" />
+	  </inertial>
+	  <visual>
+		  <origin
+			  xyz="0 0 0"
+			  rpy="0 0 0" />
+		  <geometry>
+			  <mesh
+				  filename="package://ambot_model_sim/meshes/HR3_LINK.STL" />
+		  </geometry>
+		  <material
+			  name="A">
+			  <color
+				  rgba="0.0196078431372549 0.0196078431372549 0.0196078431372549 1" />
+		  </material>
+	  </visual>
+	  <collision>
+		  <origin
+			  xyz="0 -0.022 -0.0155"
+			  rpy="0 0 0" />
+		  <geometry>
+			  <box size="0.041 0.041 0.060"/>
+		  </geometry>
+	  </collision>
+  </link>
+  <joint
+	  name="HR3_JOINT"
+	  type="revolute">
+	  <origin
+		  xyz="-0.0252 -0.12521 -1.4041E-05"
+		  rpy="0 0 0" />
+	  <parent
+		  link="HR2_LINK" />
+	  <child
+		  link="HR3_LINK" />
+	  <axis
+		  xyz="0 -1 0" />
+	  <limit
+		  lower="-3.14159"
+		  upper="3.14159"
+		  effort="80"
+		  velocity="15" 
+		  command_effort="80" 
+		  current="10"
+		  gear_velocity="10"
+		  /> 
+	  <dynamics damping="0.0" friction="0.0"/>  
+  </joint>
+  <link
+	  name="HR4_LINK">
+	  <inertial>
+		  <origin
+			  xyz="-0.0253 -0.066204 -1.4041E-05"
+			  rpy="0 0 0" />
+		  <mass
+			  value="0.075383" />
+		  <inertia
+			  ixx="3.4309E-05"
+			  ixy="-2.0798E-15"
+			  ixz="2.7117E-14"
+			  iyy="1.4826E-05"
+			  iyz="3.9576E-15"
+			  izz="4.4764E-05" />
+	  </inertial>
+	  <visual>
+		  <origin
+			  xyz="0 0 0"
+			  rpy="0 0 0" />
+		  <geometry>
+			  <mesh
+				  filename="package://ambot_model_sim/meshes/HR4_LINK.STL" />
+		  </geometry>
+		  <material
+			  name="A">
+			  <color
+				  rgba="0.89804 0.91765 0.92941 1" />
+		  </material>
+	  </visual>
+	  <collision>
+		  <origin
+			  xyz="-0.024 -0.078 0.0"
+			  rpy="0 0 0" />
+		  <geometry>
+			  <box size="0.01 0.030 0.01"/>
+		  </geometry>
+	  </collision>
+  </link>
+  <joint
+	  name="HR4_JOINT"
+	  type="revolute">
+	  <origin
+		  xyz="0.0252 -0.0222 2.8082E-05"
+		  rpy="0 0 0" />
+	  <parent
+		  link="HR3_LINK" />
+	  <child
+		  link="HR4_LINK" />
+	  <axis
+		  xyz="1 0 0" />
+	  <limit
+		  lower="-3.14159"
+		  upper="3.14159"
+		  effort="80"
+		  velocity="15" 
+		  command_effort="80" 
+		  current="10"
+		  gear_velocity="10"
+		  /> 
+	  <dynamics damping="0.0" friction="0.0"/>  
+  </joint>
+
+  <!-- Foot link -->  
+  <link name="HR_FOOT">    
+	  <visual>
+		  <origin xyz="-0.02530 -0.1190 0"/>      
+		  <geometry>        
+			  <sphere radius="0.025"/>      
+		  </geometry>  
+		  <material
+			  name="A">
+			  <color
+				  rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+		  </material>
+	  </visual>
+	  <collision>      
+		  <origin xyz="-0.02530 -0.1190 0"/>      
+		  <geometry>        
+			  <sphere radius="0.025"/>      
+		  </geometry>    
+	  </collision> 
+	  <inertial>
+		  <origin rpy="0 0 0" xyz="-0.02530 -0.1190 0"/>
+		  <mass value="0.05"/>
+		  <inertia ixx="0.001" ixy="-2.63048e-07" ixz="6.815581e-06" iyy="0.001" iyz="-6.815583e-06" izz="8.319196e-06"/>
+	  </inertial> 
+  </link>
+
+  <joint name="HR_TO_FOOT" type="fixed" dont_collapse="true">    
+	  <parent link="HR4_LINK"/>    
+	  <child link="HR_FOOT"/>    
+	  <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>  
+  </joint>
+
+  <link
+	  name="TAIL1_LINK">
+	  <inertial>
+		  <origin
+			  xyz="-0.0556739276929865 3.61699028247897E-05 -0.0233300463243901"
+			  rpy="0 0 0" />
+		  <mass
+			  value="0.0937626012175353" />
+		  <inertia
+			  ixx="1.74839708708055E-05"
+			  ixy="3.09230421734669E-07"
+			  ixz="6.06824257928429E-09"
+			  iyy="2.23760685381496E-05"
+			  iyz="1.09237468916004E-11"
+			  izz="2.38323118486215E-05" />
+	  </inertial>
+	  <visual>
+		  <origin
+			  xyz="0 0 0"
+			  rpy="0 0 0" />
+		  <geometry>
+			  <mesh
+				  filename="package://ambot_model_sim/meshes/TAIL1_LINK.STL" />
+		  </geometry>
+		  <material
+			  name="A">
+			  <color
+				  rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+		  </material>
+	  </visual>
+	  <collision>
+		  <origin
+			  xyz="-0.0611 0 -0.023"
+			  rpy="0 0 0" />
+		  <geometry>
+			  <box size="0.045 0.0356 0.0356"/>
+		  </geometry>
+	  </collision>
+  </link>
+  <joint
+	  name="TAIL1_JOINT"
+	  type="revolute">
+	  <origin
+		  xyz="-0.14183 0 -0.00195"
+		  rpy="0 0 0" />
+	  <parent
+		  link="SPINE2_LINK" />
+	  <child
+		  link="TAIL1_LINK" />
+	  <axis
+		  xyz="0 0 1" />
+	  <limit
+		  lower="-3.14159"
+		  upper="3.14159"
+		  effort="80"
+		  velocity="15" 
+		  command_effort="80" 
+		  current="10"
+		  gear_velocity="10"
+		  /> 
+	  <dynamics damping="0.0" friction="0.0"/>  
+  </joint>
+  <link
+	  name="TAIL2_LINK">
+	  <inertial>
+		  <origin
+			  xyz="-0.055674 -0.02333 3.6169E-05"
+			  rpy="0 0 0" />
+		  <mass
+			  value="0.093763" />
+		  <inertia
+			  ixx="1.7484E-05"
+			  ixy="6.0706E-09"
+			  ixz="3.0923E-07"
+			  iyy="2.3832E-05"
+			  iyz="-9.9901E-12"
+			  izz="2.2376E-05" />
+	  </inertial>
+	  <visual>
+		  <origin
+			  xyz="0 0 0"
+			  rpy="0 0 0" />
+		  <geometry>
+			  <mesh
+				  filename="package://ambot_model_sim/meshes/TAIL2_LINK.STL" />
+		  </geometry>
+		  <material
+			  name="A">
+			  <color
+				  rgba="0.89804 0.91765 0.92941 1" />
+		  </material>
+	  </visual>
+	  <collision>
+		  <origin
+			  xyz="-0.0611 -0.023 0"
+			  rpy="0 0 0" />
+		  <geometry>
+			  <box size="0.045 0.0356 0.0356"/>
+		  </geometry>
+	  </collision>
+  </link>
+  <joint
+	  name="TAIL2_JOINT"
+	  type="revolute">
+	  <origin
+		  xyz="-0.0716 0.02325 -0.02335"
+		  rpy="0 0 0" />
+	  <parent
+		  link="TAIL1_LINK" />
+	  <child
+		  link="TAIL2_LINK" />
+	  <axis
+		  xyz="0 1 0" />
+	  <limit
+		  lower="-3.14159"
+		  upper="3.14159"
+		  effort="80"
+		  velocity="15" 
+		  command_effort="80" 
+		  current="10"
+		  gear_velocity="10"
+		  /> 
+	  <dynamics damping="0.0" friction="0.0"/>  
+  </joint>
+  <link
+	  name="TAIL3_LINK">
+	  <inertial>
+		  <origin
+			  xyz="-0.055674 1.9617E-05 -0.023314"
+			  rpy="0 0 0" />
+		  <mass
+			  value="0.093763" />
+		  <inertia
+			  ixx="1.7484E-05"
+			  ixy="6.1723E-09"
+			  ixz="3.0933E-07"
+			  iyy="2.5926E-05"
+			  iyz="-9.9883E-12"
+			  izz="2.0282E-05" />
+	  </inertial>
+	  <visual>
+		  <origin
+			  xyz="0 0 0"
+			  rpy="0 0 0" />
+		  <geometry>
+			  <mesh
+				  filename="package://ambot_model_sim/meshes/TAIL3_LINK.STL" />
+		  </geometry>
+		  <material
+			  name="A">
+			  <color
+				  rgba="0.89804 0.91765 0.92941 1" />
+		  </material>
+	  </visual>
+	  <collision>
+		  <origin
+			  xyz="-0.0611 0 -0.023"
+			  rpy="0 0 0" />
+		  <geometry>
+			  <box size="0.045 0.0356 0.0356"/>
+		  </geometry>
+	  </collision>
+  </link>
+  <joint
+	  name="TAIL3_JOINT"
+	  type="revolute">
+	  <origin
+		  xyz="-0.0716 -0.02335 0.02325"
+		  rpy="0 0 0" />
+	  <parent
+		  link="TAIL2_LINK" />
+	  <child
+		  link="TAIL3_LINK" />
+	  <axis
+		  xyz="0 0 1" />
+	  <limit
+		  lower="-3.14159"
+		  upper="3.14159"
+		  effort="80"
+		  velocity="15" 
+		  command_effort="80" 
+		  current="10"
+		  gear_velocity="10"
+		  /> 
+	  <dynamics damping="0.0" friction="0.0"/>  
+  </joint>
+  <link
+	  name="TAIL4_LINK">
+	  <inertial>
+		  <origin
+			  xyz="-0.097476 -7.8774E-07 -0.023351"
+			  rpy="0 0 0" />
+		  <mass
+			  value="0.038207" />
+		  <inertia
+			  ixx="7.1973E-06"
+			  ixy="-1.0175E-10"
+			  ixz="1.0175E-10"
+			  iyy="0.0001111"
+			  iyz="-3.0494E-22"
+			  izz="0.00011043" />
+	  </inertial>
+	  <visual>
+		  <origin
+			  xyz="0 0 0"
+			  rpy="0 0 0" />
+		  <geometry>
+			  <mesh
+				  filename="package://ambot_model_sim/meshes/TAIL4_LINK.STL" />
+		  </geometry>
+		  <material
+			  name="A">
+			  <color
+				  rgba="0.89804 0.91765 0.92941 1" />
+		  </material>
+	  </visual>
+	  <collision>
+		  <origin
+			  xyz="-0.0611 0 -0.023"
+			  rpy="0 0 0" />
+		  <geometry>
+			  <box size="0.045 0.0356 0.0356"/>
+		  </geometry>
+	  </collision>
+  </link>
+  <joint
+	  name="TAIL4_JOINT"
+	  type="revolute">
+	  <origin
+		  xyz="-0.0716 0 -0.0001"
+		  rpy="0 0 0" />
+	  <parent
+		  link="TAIL3_LINK" />
+	  <child
+		  link="TAIL4_LINK" />
+	  <axis
+		  xyz="0 0 1" />
+	  <limit
+		  lower="-3.14159"
+		  upper="3.14159"
+		  effort="80"
+		  velocity="15" 
+		  command_effort="80" 
+		  current="10"
+		  gear_velocity="10"
+		  /> 
+	  <dynamics damping="0.0" friction="0.0"/>  
+  </joint>
+</robot>

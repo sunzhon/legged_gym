@@ -53,3 +53,4 @@ class BaseConfig:
                 setattr(obj, key, i_var)
                 # recursively init members of the attribute
                 BaseConfig.init_member_classes(i_var)
+

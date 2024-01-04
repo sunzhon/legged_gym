@@ -34,12 +34,11 @@ from isaacgym import gymutil
 import numpy as np
 import torch
 
-# Base class for RL tasks
+# Base class for rl simulation tasks
 class BaseTask():
 
     def __init__(self, cfg, sim_params, physics_engine, sim_device, headless):
         self.gym = gymapi.acquire_gym()
-
         self.sim_params = sim_params
         self.physics_engine = physics_engine
         self.sim_device = sim_device

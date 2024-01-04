@@ -185,3 +185,4 @@ def pit_terrain(terrain, depth, platform_size=1.):
     y1 = terrain.width // 2 - platform_size
     y2 = terrain.width // 2 + platform_size
     terrain.height_field_raw[x1:x2, y1:y2] = -depth
+

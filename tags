@@ -1,0 +1,472 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+A1RoughCfg	legged_gym/envs/a1/a1_config.py	/^class A1RoughCfg( LeggedRobotCfg ):$/;"	c
+A1RoughCfgPPO	legged_gym/envs/a1/a1_config.py	/^class A1RoughCfgPPO( LeggedRobotCfgPPO ):$/;"	c
+Anymal	legged_gym/envs/anymal_c/anymal.py	/^class Anymal(LeggedRobot):$/;"	c
+AnymalBRoughCfg	legged_gym/envs/anymal_b/anymal_b_config.py	/^class AnymalBRoughCfg( AnymalCRoughCfg ):$/;"	c
+AnymalBRoughCfgPPO	legged_gym/envs/anymal_b/anymal_b_config.py	/^class AnymalBRoughCfgPPO( AnymalCRoughCfgPPO ):$/;"	c
+AnymalCFlatCfg	legged_gym/envs/anymal_c/flat/anymal_c_flat_config.py	/^class AnymalCFlatCfg( AnymalCRoughCfg ):$/;"	c
+AnymalCFlatCfgPPO	legged_gym/envs/anymal_c/flat/anymal_c_flat_config.py	/^class AnymalCFlatCfgPPO( AnymalCRoughCfgPPO ):$/;"	c
+AnymalCRoughCfg	legged_gym/envs/anymal_c/mixed_terrains/anymal_c_rough_config.py	/^class AnymalCRoughCfg( LeggedRobotCfg ):$/;"	c
+AnymalCRoughCfgPPO	legged_gym/envs/anymal_c/mixed_terrains/anymal_c_rough_config.py	/^class AnymalCRoughCfgPPO( LeggedRobotCfgPPO ):$/;"	c
+BaseConfig	legged_gym/envs/base/base_config.py	/^class BaseConfig:$/;"	c
+BaseTask	legged_gym/envs/base/base_task.py	/^class BaseTask():$/;"	c
+Cassie	legged_gym/envs/cassie/cassie.py	/^class Cassie(LeggedRobot):$/;"	c
+CassieRoughCfg	legged_gym/envs/cassie/cassie_config.py	/^class CassieRoughCfg( LeggedRobotCfg ):$/;"	c
+CassieRoughCfgPPO	legged_gym/envs/cassie/cassie_config.py	/^class CassieRoughCfgPPO( LeggedRobotCfgPPO ):$/;"	c
+EXPORT_POLICY	legged_gym/scripts/play.py	/^    EXPORT_POLICY = True$/;"	v
+LEGGED_GYM_ENVS_DIR	legged_gym/__init__.py	/^LEGGED_GYM_ENVS_DIR = os.path.join(LEGGED_GYM_ROOT_DIR, 'legged_gym', 'envs')/;"	v
+LEGGED_GYM_ROOT_DIR	legged_gym/__init__.py	/^LEGGED_GYM_ROOT_DIR = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))$/;"	v
+LeggedRobot	legged_gym/envs/base/legged_robot.py	/^class LeggedRobot(BaseTask):$/;"	c
+LeggedRobotCfg	legged_gym/envs/base/legged_robot_config.py	/^class LeggedRobotCfg(BaseConfig):$/;"	c
+LeggedRobotCfgPPO	legged_gym/envs/base/legged_robot_config.py	/^class LeggedRobotCfgPPO(BaseConfig):$/;"	c
+Logger	legged_gym/utils/logger.py	/^class Logger:$/;"	c
+MOVE_CAMERA	legged_gym/scripts/play.py	/^    MOVE_CAMERA = False$/;"	v
+PolicyExporterLSTM	legged_gym/utils/helpers.py	/^class PolicyExporterLSTM(torch.nn.Module):$/;"	c
+RECORD_FRAMES	legged_gym/scripts/play.py	/^    RECORD_FRAMES = True$/;"	v
+TaskRegistry	legged_gym/utils/task_registry.py	/^class TaskRegistry():$/;"	c
+Terrain	legged_gym/utils/terrain.py	/^class Terrain:$/;"	c
+__del__	legged_gym/utils/logger.py	/^    def __del__(self):$/;"	m	class:Logger	file:
+__init__	legged_gym/envs/anymal_c/anymal.py	/^    def __init__(self, cfg, sim_params, physics_engine, sim_device, headless):$/;"	m	class:Anymal
+__init__	legged_gym/envs/base/base_config.py	/^    def __init__(self) -> None:$/;"	m	class:BaseConfig
+__init__	legged_gym/envs/base/base_task.py	/^    def __init__(self, cfg, sim_params, physics_engine, sim_device, headless):$/;"	m	class:BaseTask
+__init__	legged_gym/envs/base/legged_robot.py	/^    def __init__(self, cfg: LeggedRobotCfg, sim_params, physics_engine, sim_device, headless):$/;"	m	class:LeggedRobot
+__init__	legged_gym/utils/helpers.py	/^    def __init__(self, actor_critic):$/;"	m	class:PolicyExporterLSTM
+__init__	legged_gym/utils/logger.py	/^    def __init__(self, dt):$/;"	m	class:Logger
+__init__	legged_gym/utils/task_registry.py	/^    def __init__(self):$/;"	m	class:TaskRegistry
+__init__	legged_gym/utils/terrain.py	/^    def __init__(self, cfg: LeggedRobotCfg.terrain, num_robots) -> None:$/;"	m	class:Terrain
+_compute_torques	legged_gym/envs/anymal_c/anymal.py	/^    def _compute_torques(self, actions):$/;"	m	class:Anymal
+_compute_torques	legged_gym/envs/base/legged_robot.py	/^    def _compute_torques(self, actions):$/;"	m	class:LeggedRobot
+_create_envs	legged_gym/envs/base/legged_robot.py	/^    def _create_envs(self):$/;"	m	class:LeggedRobot
+_create_ground_plane	legged_gym/envs/base/legged_robot.py	/^    def _create_ground_plane(self):$/;"	m	class:LeggedRobot
+_create_heightfield	legged_gym/envs/base/legged_robot.py	/^    def _create_heightfield(self):$/;"	m	class:LeggedRobot
+_create_trimesh	legged_gym/envs/base/legged_robot.py	/^    def _create_trimesh(self):$/;"	m	class:LeggedRobot
+_draw_debug_vis	legged_gym/envs/base/legged_robot.py	/^    def _draw_debug_vis(self):$/;"	m	class:LeggedRobot
+_get_env_origins	legged_gym/envs/base/legged_robot.py	/^    def _get_env_origins(self):$/;"	m	class:LeggedRobot
+_get_heights	legged_gym/envs/base/legged_robot.py	/^    def _get_heights(self, env_ids=None):$/;"	m	class:LeggedRobot
+_get_noise_scale_vec	legged_gym/envs/base/legged_robot.py	/^    def _get_noise_scale_vec(self, cfg):$/;"	m	class:LeggedRobot
+_init_buffers	legged_gym/envs/anymal_c/anymal.py	/^    def _init_buffers(self):$/;"	m	class:Anymal
+_init_buffers	legged_gym/envs/base/legged_robot.py	/^    def _init_buffers(self):$/;"	m	class:LeggedRobot
+_init_height_points	legged_gym/envs/base/legged_robot.py	/^    def _init_height_points(self):$/;"	m	class:LeggedRobot
+_parse_cfg	legged_gym/envs/base/legged_robot.py	/^    def _parse_cfg(self, cfg):$/;"	m	class:LeggedRobot
+_plot	legged_gym/utils/logger.py	/^    def _plot(self):$/;"	m	class:Logger
+_post_physics_step_callback	legged_gym/envs/base/legged_robot.py	/^    def _post_physics_step_callback(self):$/;"	m	class:LeggedRobot
+_prepare_reward_function	legged_gym/envs/base/legged_robot.py	/^    def _prepare_reward_function(self):$/;"	m	class:LeggedRobot
+_process_dof_props	legged_gym/envs/base/legged_robot.py	/^    def _process_dof_props(self, props, env_id):$/;"	m	class:LeggedRobot
+_process_rigid_body_props	legged_gym/envs/base/legged_robot.py	/^    def _process_rigid_body_props(self, props, env_id):$/;"	m	class:LeggedRobot
+_process_rigid_shape_props	legged_gym/envs/base/legged_robot.py	/^    def _process_rigid_shape_props(self, props, env_id):$/;"	m	class:LeggedRobot
+_push_robots	legged_gym/envs/base/legged_robot.py	/^    def _push_robots(self):$/;"	m	class:LeggedRobot
+_resample_commands	legged_gym/envs/base/legged_robot.py	/^    def _resample_commands(self, env_ids):$/;"	m	class:LeggedRobot
+_reset_dofs	legged_gym/envs/base/legged_robot.py	/^    def _reset_dofs(self, env_ids):$/;"	m	class:LeggedRobot
+_reset_root_states	legged_gym/envs/base/legged_robot.py	/^    def _reset_root_states(self, env_ids):$/;"	m	class:LeggedRobot
+_reward_action_rate	legged_gym/envs/base/legged_robot.py	/^    def _reward_action_rate(self):$/;"	m	class:LeggedRobot
+_reward_ang_vel_xy	legged_gym/envs/base/legged_robot.py	/^    def _reward_ang_vel_xy(self):$/;"	m	class:LeggedRobot
+_reward_base_height	legged_gym/envs/base/legged_robot.py	/^    def _reward_base_height(self):$/;"	m	class:LeggedRobot
+_reward_collision	legged_gym/envs/base/legged_robot.py	/^    def _reward_collision(self):$/;"	m	class:LeggedRobot
+_reward_dof_acc	legged_gym/envs/base/legged_robot.py	/^    def _reward_dof_acc(self):$/;"	m	class:LeggedRobot
+_reward_dof_pos_limits	legged_gym/envs/base/legged_robot.py	/^    def _reward_dof_pos_limits(self):$/;"	m	class:LeggedRobot
+_reward_dof_vel	legged_gym/envs/base/legged_robot.py	/^    def _reward_dof_vel(self):$/;"	m	class:LeggedRobot
+_reward_dof_vel_limits	legged_gym/envs/base/legged_robot.py	/^    def _reward_dof_vel_limits(self):$/;"	m	class:LeggedRobot
+_reward_feet_air_time	legged_gym/envs/base/legged_robot.py	/^    def _reward_feet_air_time(self):$/;"	m	class:LeggedRobot
+_reward_feet_contact_forces	legged_gym/envs/base/legged_robot.py	/^    def _reward_feet_contact_forces(self):$/;"	m	class:LeggedRobot
+_reward_lin_vel_z	legged_gym/envs/base/legged_robot.py	/^    def _reward_lin_vel_z(self):$/;"	m	class:LeggedRobot
+_reward_no_fly	legged_gym/envs/cassie/cassie.py	/^    def _reward_no_fly(self):$/;"	m	class:Cassie
+_reward_orientation	legged_gym/envs/base/legged_robot.py	/^    def _reward_orientation(self):$/;"	m	class:LeggedRobot
+_reward_stand_still	legged_gym/envs/base/legged_robot.py	/^    def _reward_stand_still(self):$/;"	m	class:LeggedRobot
+_reward_stumble	legged_gym/envs/base/legged_robot.py	/^    def _reward_stumble(self):$/;"	m	class:LeggedRobot
+_reward_termination	legged_gym/envs/base/legged_robot.py	/^    def _reward_termination(self):$/;"	m	class:LeggedRobot
+_reward_torque_limits	legged_gym/envs/base/legged_robot.py	/^    def _reward_torque_limits(self):$/;"	m	class:LeggedRobot
+_reward_torques	legged_gym/envs/base/legged_robot.py	/^    def _reward_torques(self):$/;"	m	class:LeggedRobot
+_reward_tracking_ang_vel	legged_gym/envs/base/legged_robot.py	/^    def _reward_tracking_ang_vel(self):$/;"	m	class:LeggedRobot
+_reward_tracking_lin_vel	legged_gym/envs/base/legged_robot.py	/^    def _reward_tracking_lin_vel(self):$/;"	m	class:LeggedRobot
+_update_terrain_curriculum	legged_gym/envs/base/legged_robot.py	/^    def _update_terrain_curriculum(self, env_ids):$/;"	m	class:LeggedRobot
+action_rate	legged_gym/envs/base/legged_robot_config.py	/^            action_rate = -0.01$/;"	v	class:LeggedRobotCfg.rewards.scales
+action_scale	legged_gym/envs/a1/a1_config.py	/^        action_scale = 0.25$/;"	v	class:A1RoughCfg.control
+action_scale	legged_gym/envs/anymal_c/mixed_terrains/anymal_c_rough_config.py	/^        action_scale = 0.5$/;"	v	class:AnymalCRoughCfg.control
+action_scale	legged_gym/envs/base/legged_robot_config.py	/^        action_scale = 0.5$/;"	v	class:LeggedRobotCfg.control
+action_scale	legged_gym/envs/cassie/cassie_config.py	/^        action_scale = 0.5$/;"	v	class:CassieRoughCfg.control
+activation	legged_gym/envs/anymal_c/flat/anymal_c_flat_config.py	/^        activation = 'elu' # can be elu, relu, selu, crelu, lrelu, tanh, sigmoid$/;"	v	class:AnymalCFlatCfgPPO.policy
+activation	legged_gym/envs/base/legged_robot_config.py	/^        activation = 'elu' # can be elu, relu, selu, crelu, lrelu, tanh, sigmoid$/;"	v	class:LeggedRobotCfgPPO.policy
+actor_hidden_dims	legged_gym/envs/anymal_c/flat/anymal_c_flat_config.py	/^        actor_hidden_dims = [128, 64, 32]$/;"	v	class:AnymalCFlatCfgPPO.policy
+actor_hidden_dims	legged_gym/envs/base/legged_robot_config.py	/^        actor_hidden_dims = [512, 256, 128]$/;"	v	class:LeggedRobotCfgPPO.policy
+actuator_net_file	legged_gym/envs/anymal_c/mixed_terrains/anymal_c_rough_config.py	/^        actuator_net_file = "{LEGGED_GYM_ROOT_DIR}\/resources\/actuator_nets\/anydrive_v3_lstm.pt"$/;"	v	class:AnymalCRoughCfg.control
+add_noise	legged_gym/envs/base/legged_robot_config.py	/^        add_noise = True$/;"	v	class:LeggedRobotCfg.noise
+add_terrain_to_map	legged_gym/utils/terrain.py	/^    def add_terrain_to_map(self, terrain, row, col):$/;"	m	class:Terrain
+added_mass_range	legged_gym/envs/anymal_c/mixed_terrains/anymal_c_rough_config.py	/^        added_mass_range = [-5., 5.]$/;"	v	class:AnymalCRoughCfg.domain_rand
+added_mass_range	legged_gym/envs/base/legged_robot_config.py	/^        added_mass_range = [-1., 1.]$/;"	v	class:LeggedRobotCfg.domain_rand
+algorithm	legged_gym/envs/a1/a1_config.py	/^    class algorithm( LeggedRobotCfgPPO.algorithm ):$/;"	c	class:A1RoughCfgPPO
+algorithm	legged_gym/envs/anymal_c/flat/anymal_c_flat_config.py	/^    class algorithm( AnymalCRoughCfgPPO.algorithm):$/;"	c	class:AnymalCFlatCfgPPO
+algorithm	legged_gym/envs/base/legged_robot_config.py	/^    class algorithm:$/;"	c	class:LeggedRobotCfgPPO
+algorithm	legged_gym/envs/cassie/cassie_config.py	/^    class algorithm( LeggedRobotCfgPPO.algorithm):$/;"	c	class:CassieRoughCfgPPO
+algorithm_class_name	legged_gym/envs/base/legged_robot_config.py	/^        algorithm_class_name = 'PPO'$/;"	v	class:LeggedRobotCfgPPO.runner
+ang_vel	legged_gym/envs/base/legged_robot_config.py	/^            ang_vel = 0.2$/;"	v	class:LeggedRobotCfg.noise.noise_scales
+ang_vel	legged_gym/envs/base/legged_robot_config.py	/^            ang_vel = 0.25$/;"	v	class:LeggedRobotCfg.normalization.obs_scales
+ang_vel	legged_gym/envs/base/legged_robot_config.py	/^        ang_vel = [0.0, 0.0, 0.0]  # x,y,z [rad\/s]$/;"	v	class:LeggedRobotCfg.init_state
+ang_vel_xy	legged_gym/envs/base/legged_robot_config.py	/^            ang_vel_xy = -0.05$/;"	v	class:LeggedRobotCfg.rewards.scales
+ang_vel_xy	legged_gym/envs/cassie/cassie_config.py	/^            ang_vel_xy = -0.0$/;"	v	class:CassieRoughCfg.rewards.scales
+ang_vel_yaw	legged_gym/envs/anymal_c/flat/anymal_c_flat_config.py	/^            ang_vel_yaw = [-1.5, 1.5]$/;"	v	class:AnymalCFlatCfg.commands.ranges
+ang_vel_yaw	legged_gym/envs/base/legged_robot_config.py	/^            ang_vel_yaw = [-1, 1]    # min max [rad\/s]$/;"	v	class:LeggedRobotCfg.commands.ranges
+angular_damping	legged_gym/envs/base/legged_robot_config.py	/^        angular_damping = 0.$/;"	v	class:LeggedRobotCfg.asset
+args	legged_gym/scripts/play.py	/^    args = get_args()$/;"	v
+args	legged_gym/tests/test_env.py	/^    args = get_args()$/;"	v
+armature	legged_gym/envs/base/legged_robot_config.py	/^        armature = 0.$/;"	v	class:LeggedRobotCfg.asset
+asset	legged_gym/envs/a1/a1_config.py	/^    class asset( LeggedRobotCfg.asset ):$/;"	c	class:A1RoughCfg
+asset	legged_gym/envs/anymal_b/anymal_b_config.py	/^    class asset( AnymalCRoughCfg.asset ):$/;"	c	class:AnymalBRoughCfg
+asset	legged_gym/envs/anymal_c/flat/anymal_c_flat_config.py	/^    class asset( AnymalCRoughCfg.asset ):$/;"	c	class:AnymalCFlatCfg
+asset	legged_gym/envs/anymal_c/mixed_terrains/anymal_c_rough_config.py	/^    class asset( LeggedRobotCfg.asset ):$/;"	c	class:AnymalCRoughCfg
+asset	legged_gym/envs/base/legged_robot_config.py	/^    class asset:$/;"	c	class:LeggedRobotCfg
+asset	legged_gym/envs/cassie/cassie_config.py	/^    class asset( LeggedRobotCfg.asset ):$/;"	c	class:CassieRoughCfg
+author	setup.py	/^    author='Nikita Rudin',$/;"	v
+author_email	setup.py	/^    author_email='rudinn@ethz.ch',$/;"	v
+base_height	legged_gym/envs/base/legged_robot_config.py	/^            base_height = -0. $/;"	v	class:LeggedRobotCfg.rewards.scales
+base_height_target	legged_gym/envs/a1/a1_config.py	/^        base_height_target = 0.25$/;"	v	class:A1RoughCfg.rewards
+base_height_target	legged_gym/envs/anymal_c/mixed_terrains/anymal_c_rough_config.py	/^        base_height_target = 0.5$/;"	v	class:AnymalCRoughCfg.rewards
+base_height_target	legged_gym/envs/base/legged_robot_config.py	/^        base_height_target = 1.$/;"	v	class:LeggedRobotCfg.rewards
+border_size	legged_gym/envs/base/legged_robot_config.py	/^        border_size = 25 # [m]$/;"	v	class:LeggedRobotCfg.terrain
+bounce_threshold_velocity	legged_gym/envs/base/legged_robot_config.py	/^            bounce_threshold_velocity = 0.5 #0.5 [m\/s]$/;"	v	class:LeggedRobotCfg.sim.physx
+check_termination	legged_gym/envs/base/legged_robot.py	/^    def check_termination(self):$/;"	m	class:LeggedRobot
+checkpoint	legged_gym/envs/base/legged_robot_config.py	/^        checkpoint = -1 # -1 = last saved model$/;"	v	class:LeggedRobotCfgPPO.runner
+class_to_dict	legged_gym/utils/helpers.py	/^def class_to_dict(obj) -> dict:$/;"	f
+clip_actions	legged_gym/envs/base/legged_robot_config.py	/^        clip_actions = 100.$/;"	v	class:LeggedRobotCfg.normalization
+clip_observations	legged_gym/envs/base/legged_robot_config.py	/^        clip_observations = 100.$/;"	v	class:LeggedRobotCfg.normalization
+clip_param	legged_gym/envs/base/legged_robot_config.py	/^        clip_param = 0.2$/;"	v	class:LeggedRobotCfgPPO.algorithm
+collapse_fixed_joints	legged_gym/envs/base/legged_robot_config.py	/^        collapse_fixed_joints = True # merge bodies connected by fixed joints. Specific fixed joints can be kept by adding " <... dont_collapse="true">$/;"	v	class:LeggedRobotCfg.asset
+collision	legged_gym/envs/base/legged_robot_config.py	/^            collision = -1.$/;"	v	class:LeggedRobotCfg.rewards.scales
+commands	legged_gym/envs/anymal_c/flat/anymal_c_flat_config.py	/^    class commands( AnymalCRoughCfg.commands ):$/;"	c	class:AnymalCFlatCfg
+commands	legged_gym/envs/base/legged_robot_config.py	/^    class commands:$/;"	c	class:LeggedRobotCfg
+compute_observations	legged_gym/envs/base/legged_robot.py	/^    def compute_observations(self):$/;"	m	class:LeggedRobot
+compute_reward	legged_gym/envs/base/legged_robot.py	/^    def compute_reward(self):$/;"	m	class:LeggedRobot
+contact_collection	legged_gym/envs/base/legged_robot_config.py	/^            contact_collection = 2 # 0: never, 1: last sub-step, 2: all sub-steps (default=2)$/;"	v	class:LeggedRobotCfg.sim.physx
+contact_offset	legged_gym/envs/base/legged_robot_config.py	/^            contact_offset = 0.01  # [m]$/;"	v	class:LeggedRobotCfg.sim.physx
+control	legged_gym/envs/a1/a1_config.py	/^    class control( LeggedRobotCfg.control ):$/;"	c	class:A1RoughCfg
+control	legged_gym/envs/anymal_c/mixed_terrains/anymal_c_rough_config.py	/^    class control( LeggedRobotCfg.control ):$/;"	c	class:AnymalCRoughCfg
+control	legged_gym/envs/base/legged_robot_config.py	/^    class control:$/;"	c	class:LeggedRobotCfg
+control	legged_gym/envs/cassie/cassie_config.py	/^    class control( LeggedRobotCfg.control ):$/;"	c	class:CassieRoughCfg
+control_type	legged_gym/envs/a1/a1_config.py	/^        control_type = 'P'$/;"	v	class:A1RoughCfg.control
+control_type	legged_gym/envs/base/legged_robot_config.py	/^        control_type = 'P' # P: position, V: velocity, T: torques$/;"	v	class:LeggedRobotCfg.control
+create_sim	legged_gym/envs/base/legged_robot.py	/^    def create_sim(self):$/;"	m	class:LeggedRobot
+critic_hidden_dims	legged_gym/envs/anymal_c/flat/anymal_c_flat_config.py	/^        critic_hidden_dims = [128, 64, 32]$/;"	v	class:AnymalCFlatCfgPPO.policy
+critic_hidden_dims	legged_gym/envs/base/legged_robot_config.py	/^        critic_hidden_dims = [512, 256, 128]$/;"	v	class:LeggedRobotCfgPPO.policy
+curiculum	legged_gym/utils/terrain.py	/^    def curiculum(self):$/;"	m	class:Terrain
+curriculum	legged_gym/envs/base/legged_robot_config.py	/^        curriculum = False$/;"	v	class:LeggedRobotCfg.commands
+curriculum	legged_gym/envs/base/legged_robot_config.py	/^        curriculum = True$/;"	v	class:LeggedRobotCfg.terrain
+damping	legged_gym/envs/a1/a1_config.py	/^        damping = {'joint': 0.5}     # [N*m*s\/rad]$/;"	v	class:A1RoughCfg.control
+damping	legged_gym/envs/anymal_c/mixed_terrains/anymal_c_rough_config.py	/^        damping = {'HAA': 2., 'HFE': 2., 'KFE': 2.}     # [N*m*s\/rad]$/;"	v	class:AnymalCRoughCfg.control
+damping	legged_gym/envs/base/legged_robot_config.py	/^        damping = {'joint_a': 1.0, 'joint_b': 1.5}     # [N*m*s\/rad]$/;"	v	class:LeggedRobotCfg.control
+damping	legged_gym/envs/cassie/cassie_config.py	/^        damping = { 'hip_abduction': 3.0, 'hip_rotation': 3.0,$/;"	v	class:CassieRoughCfg.control
+decimation	legged_gym/envs/a1/a1_config.py	/^        decimation = 4$/;"	v	class:A1RoughCfg.control
+decimation	legged_gym/envs/anymal_c/mixed_terrains/anymal_c_rough_config.py	/^        decimation = 4$/;"	v	class:AnymalCRoughCfg.control
+decimation	legged_gym/envs/base/legged_robot_config.py	/^        decimation = 4$/;"	v	class:LeggedRobotCfg.control
+decimation	legged_gym/envs/cassie/cassie_config.py	/^        decimation = 4$/;"	v	class:CassieRoughCfg.control
+default_buffer_size_multiplier	legged_gym/envs/base/legged_robot_config.py	/^            default_buffer_size_multiplier = 5$/;"	v	class:LeggedRobotCfg.sim.physx
+default_dof_drive_mode	legged_gym/envs/base/legged_robot_config.py	/^        default_dof_drive_mode = 3 # see GymDofDriveModeFlags (0 is none, 1 is pos tgt, 2 is vel tgt, 3 effort)$/;"	v	class:LeggedRobotCfg.asset
+default_joint_angles	legged_gym/envs/a1/a1_config.py	/^        default_joint_angles = { # = target angles [rad] when action = 0.0$/;"	v	class:A1RoughCfg.init_state
+default_joint_angles	legged_gym/envs/anymal_c/mixed_terrains/anymal_c_rough_config.py	/^        default_joint_angles = { # = target angles [rad] when action = 0.0$/;"	v	class:AnymalCRoughCfg.init_state
+default_joint_angles	legged_gym/envs/base/legged_robot_config.py	/^        default_joint_angles = { # target angles when action = 0.0$/;"	v	class:LeggedRobotCfg.init_state
+default_joint_angles	legged_gym/envs/cassie/cassie_config.py	/^        default_joint_angles = { # = target angles [rad] when action = 0.0$/;"	v	class:CassieRoughCfg.init_state
+density	legged_gym/envs/base/legged_robot_config.py	/^        density = 0.001$/;"	v	class:LeggedRobotCfg.asset
+description	setup.py	/^    description='Isaac Gym environments for Legged Robots',$/;"	v
+desired_kl	legged_gym/envs/base/legged_robot_config.py	/^        desired_kl = 0.01$/;"	v	class:LeggedRobotCfgPPO.algorithm
+disable_gravity	legged_gym/envs/base/legged_robot_config.py	/^        disable_gravity = False$/;"	v	class:LeggedRobotCfg.asset
+dof_acc	legged_gym/envs/base/legged_robot_config.py	/^            dof_acc = -2.5e-7$/;"	v	class:LeggedRobotCfg.rewards.scales
+dof_acc	legged_gym/envs/cassie/cassie_config.py	/^            dof_acc = -2.e-7$/;"	v	class:CassieRoughCfg.rewards.scales
+dof_pos	legged_gym/envs/base/legged_robot_config.py	/^            dof_pos = 0.01$/;"	v	class:LeggedRobotCfg.noise.noise_scales
+dof_pos	legged_gym/envs/base/legged_robot_config.py	/^            dof_pos = 1.0$/;"	v	class:LeggedRobotCfg.normalization.obs_scales
+dof_pos_limits	legged_gym/envs/a1/a1_config.py	/^            dof_pos_limits = -10.0$/;"	v	class:A1RoughCfg.rewards.scales
+dof_pos_limits	legged_gym/envs/cassie/cassie_config.py	/^            dof_pos_limits = -1.$/;"	v	class:CassieRoughCfg.rewards.scales
+dof_vel	legged_gym/envs/base/legged_robot_config.py	/^            dof_vel = -0.$/;"	v	class:LeggedRobotCfg.rewards.scales
+dof_vel	legged_gym/envs/base/legged_robot_config.py	/^            dof_vel = 0.05$/;"	v	class:LeggedRobotCfg.normalization.obs_scales
+dof_vel	legged_gym/envs/base/legged_robot_config.py	/^            dof_vel = 1.5$/;"	v	class:LeggedRobotCfg.noise.noise_scales
+dof_vel	legged_gym/envs/cassie/cassie_config.py	/^            dof_vel = -0.0$/;"	v	class:CassieRoughCfg.rewards.scales
+domain_rand	legged_gym/envs/anymal_c/flat/anymal_c_flat_config.py	/^    class domain_rand( AnymalCRoughCfg.domain_rand ):$/;"	c	class:AnymalCFlatCfg
+domain_rand	legged_gym/envs/anymal_c/mixed_terrains/anymal_c_rough_config.py	/^    class domain_rand( LeggedRobotCfg.domain_rand):$/;"	c	class:AnymalCRoughCfg
+domain_rand	legged_gym/envs/base/legged_robot_config.py	/^    class domain_rand:$/;"	c	class:LeggedRobotCfg
+dt	legged_gym/envs/base/legged_robot_config.py	/^        dt =  0.005$/;"	v	class:LeggedRobotCfg.sim
+dynamic_friction	legged_gym/envs/base/legged_robot_config.py	/^        dynamic_friction = 1.0$/;"	v	class:LeggedRobotCfg.terrain
+entropy_coef	legged_gym/envs/a1/a1_config.py	/^        entropy_coef = 0.01$/;"	v	class:A1RoughCfgPPO.algorithm
+entropy_coef	legged_gym/envs/anymal_c/flat/anymal_c_flat_config.py	/^        entropy_coef = 0.01$/;"	v	class:AnymalCFlatCfgPPO.algorithm
+entropy_coef	legged_gym/envs/base/legged_robot_config.py	/^        entropy_coef = 0.01$/;"	v	class:LeggedRobotCfgPPO.algorithm
+entropy_coef	legged_gym/envs/cassie/cassie_config.py	/^        entropy_coef = 0.01$/;"	v	class:CassieRoughCfgPPO.algorithm
+env	legged_gym/envs/anymal_c/flat/anymal_c_flat_config.py	/^    class env( AnymalCRoughCfg.env ):$/;"	c	class:AnymalCFlatCfg
+env	legged_gym/envs/anymal_c/mixed_terrains/anymal_c_rough_config.py	/^    class env( LeggedRobotCfg.env ):$/;"	c	class:AnymalCRoughCfg
+env	legged_gym/envs/base/legged_robot_config.py	/^    class env:$/;"	c	class:LeggedRobotCfg
+env	legged_gym/envs/cassie/cassie_config.py	/^    class env( LeggedRobotCfg.env):$/;"	c	class:CassieRoughCfg
+env_spacing	legged_gym/envs/base/legged_robot_config.py	/^        env_spacing = 3.  # not used with heightfields\/trimeshes $/;"	v	class:LeggedRobotCfg.env
+episode_length_s	legged_gym/envs/base/legged_robot_config.py	/^        episode_length_s = 20 # episode length in seconds$/;"	v	class:LeggedRobotCfg.env
+experiment_name	legged_gym/envs/a1/a1_config.py	/^        experiment_name = 'rough_a1'$/;"	v	class:A1RoughCfgPPO.runner
+experiment_name	legged_gym/envs/anymal_b/anymal_b_config.py	/^        experiment_name = 'rough_anymal_b'$/;"	v	class:AnymalBRoughCfgPPO.runner
+experiment_name	legged_gym/envs/anymal_c/flat/anymal_c_flat_config.py	/^        experiment_name = 'flat_anymal_c'$/;"	v	class:AnymalCFlatCfgPPO.runner
+experiment_name	legged_gym/envs/anymal_c/mixed_terrains/anymal_c_rough_config.py	/^        experiment_name = 'rough_anymal_c'$/;"	v	class:AnymalCRoughCfgPPO.runner
+experiment_name	legged_gym/envs/base/legged_robot_config.py	/^        experiment_name = 'test'$/;"	v	class:LeggedRobotCfgPPO.runner
+experiment_name	legged_gym/envs/cassie/cassie_config.py	/^        experiment_name = 'rough_cassie'$/;"	v	class:CassieRoughCfgPPO.runner
+export	legged_gym/utils/helpers.py	/^    def export(self, path):$/;"	m	class:PolicyExporterLSTM
+export_policy_as_jit	legged_gym/utils/helpers.py	/^def export_policy_as_jit(actor_critic, path):$/;"	f
+feet_air_time	legged_gym/envs/anymal_c/flat/anymal_c_flat_config.py	/^            feet_air_time = 2.$/;"	v	class:AnymalCFlatCfg.rewards.scales
+feet_air_time	legged_gym/envs/base/legged_robot_config.py	/^            feet_air_time =  1.0$/;"	v	class:LeggedRobotCfg.rewards.scales
+feet_air_time	legged_gym/envs/cassie/cassie_config.py	/^            feet_air_time = 5.$/;"	v	class:CassieRoughCfg.rewards.scales
+feet_contact_forces	legged_gym/envs/cassie/cassie_config.py	/^            feet_contact_forces = -0.$/;"	v	class:CassieRoughCfg.rewards.scales
+feet_stumble	legged_gym/envs/base/legged_robot_config.py	/^            feet_stumble = -0.0 $/;"	v	class:LeggedRobotCfg.rewards.scales
+file	legged_gym/envs/a1/a1_config.py	/^        file = '{LEGGED_GYM_ROOT_DIR}\/resources\/robots\/a1\/urdf\/a1.urdf'$/;"	v	class:A1RoughCfg.asset
+file	legged_gym/envs/anymal_b/anymal_b_config.py	/^        file = '{LEGGED_GYM_ROOT_DIR}\/resources\/robots\/anymal_b\/urdf\/anymal_b.urdf'$/;"	v	class:AnymalBRoughCfg.asset
+file	legged_gym/envs/anymal_c/mixed_terrains/anymal_c_rough_config.py	/^        file = "{LEGGED_GYM_ROOT_DIR}\/resources\/robots\/anymal_c\/urdf\/anymal_c.urdf"$/;"	v	class:AnymalCRoughCfg.asset
+file	legged_gym/envs/base/legged_robot_config.py	/^        file = ""$/;"	v	class:LeggedRobotCfg.asset
+file	legged_gym/envs/cassie/cassie_config.py	/^        file = '{LEGGED_GYM_ROOT_DIR}\/resources\/robots\/cassie\/urdf\/cassie.urdf'$/;"	v	class:CassieRoughCfg.asset
+fix_base_link	legged_gym/envs/base/legged_robot_config.py	/^        fix_base_link = False # fixe the base of the robot$/;"	v	class:LeggedRobotCfg.asset
+flip_visual_attachments	legged_gym/envs/base/legged_robot_config.py	/^        flip_visual_attachments = True # Some .obj meshes must be flipped from y-up to z-up$/;"	v	class:LeggedRobotCfg.asset
+flip_visual_attachments	legged_gym/envs/cassie/cassie_config.py	/^        flip_visual_attachments = False$/;"	v	class:CassieRoughCfg.asset
+foot_name	legged_gym/envs/a1/a1_config.py	/^        foot_name = "foot"$/;"	v	class:A1RoughCfg.asset
+foot_name	legged_gym/envs/anymal_b/anymal_b_config.py	/^        foot_name = 'FOOT'$/;"	v	class:AnymalBRoughCfg.asset
+foot_name	legged_gym/envs/anymal_c/mixed_terrains/anymal_c_rough_config.py	/^        foot_name = "FOOT"$/;"	v	class:AnymalCRoughCfg.asset
+foot_name	legged_gym/envs/base/legged_robot_config.py	/^        foot_name = "None" # name of the feet bodies, used to index body state and contact force tensors$/;"	v	class:LeggedRobotCfg.asset
+foot_name	legged_gym/envs/cassie/cassie_config.py	/^        foot_name = 'toe'$/;"	v	class:CassieRoughCfg.asset
+forward	legged_gym/utils/helpers.py	/^    def forward(self, x):$/;"	m	class:PolicyExporterLSTM
+friction_range	legged_gym/envs/anymal_c/flat/anymal_c_flat_config.py	/^        friction_range = [0., 1.5] # on ground planes the friction combination mode is averaging, i.e total friction = (foot_friction + 1.)\/2.$/;"	v	class:AnymalCFlatCfg.domain_rand
+friction_range	legged_gym/envs/base/legged_robot_config.py	/^        friction_range = [0.5, 1.25]$/;"	v	class:LeggedRobotCfg.domain_rand
+gamma	legged_gym/envs/base/legged_robot_config.py	/^        gamma = 0.99$/;"	v	class:LeggedRobotCfgPPO.algorithm
+gap_terrain	legged_gym/utils/terrain.py	/^def gap_terrain(terrain, gap_size, platform_size=1.):$/;"	f
+get_args	legged_gym/utils/helpers.py	/^def get_args():$/;"	f
+get_cfgs	legged_gym/utils/task_registry.py	/^    def get_cfgs(self, name) -> Tuple[LeggedRobotCfg, LeggedRobotCfgPPO]:$/;"	m	class:TaskRegistry
+get_load_path	legged_gym/utils/helpers.py	/^def get_load_path(root, load_run=-1, checkpoint=-1):$/;"	f
+get_observations	legged_gym/envs/base/base_task.py	/^    def get_observations(self):$/;"	m	class:BaseTask
+get_privileged_observations	legged_gym/envs/base/base_task.py	/^    def get_privileged_observations(self):$/;"	m	class:BaseTask
+get_task_class	legged_gym/utils/task_registry.py	/^    def get_task_class(self, name: str) -> VecEnv:$/;"	m	class:TaskRegistry
+gravity	legged_gym/envs/base/legged_robot_config.py	/^            gravity = 0.05$/;"	v	class:LeggedRobotCfg.noise.noise_scales
+gravity	legged_gym/envs/base/legged_robot_config.py	/^        gravity = [0., 0. ,-9.81]  # [m\/s^2]$/;"	v	class:LeggedRobotCfg.sim
+heading	legged_gym/envs/base/legged_robot_config.py	/^            heading = [-3.14, 3.14]$/;"	v	class:LeggedRobotCfg.commands.ranges
+heading_command	legged_gym/envs/anymal_c/flat/anymal_c_flat_config.py	/^        heading_command = False$/;"	v	class:AnymalCFlatCfg.commands
+heading_command	legged_gym/envs/base/legged_robot_config.py	/^        heading_command = True # if true: compute ang vel command from heading error$/;"	v	class:LeggedRobotCfg.commands
+height_measurements	legged_gym/envs/base/legged_robot_config.py	/^            height_measurements = 0.1$/;"	v	class:LeggedRobotCfg.noise.noise_scales
+height_measurements	legged_gym/envs/base/legged_robot_config.py	/^            height_measurements = 5.0$/;"	v	class:LeggedRobotCfg.normalization.obs_scales
+horizontal_scale	legged_gym/envs/base/legged_robot_config.py	/^        horizontal_scale = 0.1 # [m]$/;"	v	class:LeggedRobotCfg.terrain
+init_member_classes	legged_gym/envs/base/base_config.py	/^    def init_member_classes(obj):$/;"	m	class:BaseConfig
+init_noise_std	legged_gym/envs/base/legged_robot_config.py	/^        init_noise_std = 1.0$/;"	v	class:LeggedRobotCfgPPO.policy
+init_state	legged_gym/envs/a1/a1_config.py	/^    class init_state( LeggedRobotCfg.init_state ):$/;"	c	class:A1RoughCfg
+init_state	legged_gym/envs/anymal_c/mixed_terrains/anymal_c_rough_config.py	/^    class init_state( LeggedRobotCfg.init_state ):$/;"	c	class:AnymalCRoughCfg
+init_state	legged_gym/envs/base/legged_robot_config.py	/^    class init_state:$/;"	c	class:LeggedRobotCfg
+init_state	legged_gym/envs/cassie/cassie_config.py	/^    class init_state( LeggedRobotCfg.init_state ):$/;"	c	class:CassieRoughCfg
+install_requires	setup.py	/^    install_requires=['isaacgym',$/;"	v
+lam	legged_gym/envs/base/legged_robot_config.py	/^        lam = 0.95$/;"	v	class:LeggedRobotCfgPPO.algorithm
+learning_rate	legged_gym/envs/base/legged_robot_config.py	/^        learning_rate = 1.e-3 #5.e-4$/;"	v	class:LeggedRobotCfgPPO.algorithm
+license	setup.py	/^    license="BSD-3-Clause",$/;"	v
+lin_vel	legged_gym/envs/base/legged_robot_config.py	/^            lin_vel = 0.1$/;"	v	class:LeggedRobotCfg.noise.noise_scales
+lin_vel	legged_gym/envs/base/legged_robot_config.py	/^            lin_vel = 2.0$/;"	v	class:LeggedRobotCfg.normalization.obs_scales
+lin_vel	legged_gym/envs/base/legged_robot_config.py	/^        lin_vel = [0.0, 0.0, 0.0]  # x,y,z [m\/s]$/;"	v	class:LeggedRobotCfg.init_state
+lin_vel_x	legged_gym/envs/base/legged_robot_config.py	/^            lin_vel_x = [-1.0, 1.0] # min max [m\/s]$/;"	v	class:LeggedRobotCfg.commands.ranges
+lin_vel_y	legged_gym/envs/base/legged_robot_config.py	/^            lin_vel_y = [-1.0, 1.0]   # min max [m\/s]$/;"	v	class:LeggedRobotCfg.commands.ranges
+lin_vel_z	legged_gym/envs/base/legged_robot_config.py	/^            lin_vel_z = -2.0$/;"	v	class:LeggedRobotCfg.rewards.scales
+lin_vel_z	legged_gym/envs/cassie/cassie_config.py	/^            lin_vel_z = -0.5$/;"	v	class:CassieRoughCfg.rewards.scales
+linear_damping	legged_gym/envs/base/legged_robot_config.py	/^        linear_damping = 0.$/;"	v	class:LeggedRobotCfg.asset
+load_run	legged_gym/envs/anymal_b/anymal_b_config.py	/^        load_run = -1/;"	v	class:AnymalBRoughCfgPPO.runner
+load_run	legged_gym/envs/anymal_c/flat/anymal_c_flat_config.py	/^        load_run = -1$/;"	v	class:AnymalCFlatCfgPPO.runner
+load_run	legged_gym/envs/anymal_c/mixed_terrains/anymal_c_rough_config.py	/^        load_run = -1$/;"	v	class:AnymalCRoughCfgPPO.runner
+load_run	legged_gym/envs/base/legged_robot_config.py	/^        load_run = -1 # -1 = last run$/;"	v	class:LeggedRobotCfgPPO.runner
+log_rewards	legged_gym/utils/logger.py	/^    def log_rewards(self, dict, num_episodes):$/;"	m	class:Logger
+log_state	legged_gym/utils/logger.py	/^    def log_state(self, key, value):$/;"	m	class:Logger
+log_states	legged_gym/utils/logger.py	/^    def log_states(self, dict):$/;"	m	class:Logger
+lookat	legged_gym/envs/base/legged_robot_config.py	/^        lookat = [11., 5, 3.]  # [m]$/;"	v	class:LeggedRobotCfg.viewer
+make_alg_runner	legged_gym/utils/task_registry.py	/^    def make_alg_runner(self, env, name=None, args=None, train_cfg=None, log_root="default") -> Tuple[OnPolicyRunner, LeggedRobotCfgPPO]:$/;"	m	class:TaskRegistry
+make_env	legged_gym/utils/task_registry.py	/^    def make_env(self, name, args=None, env_cfg=None) -> Tuple[VecEnv, LeggedRobotCfg]:$/;"	m	class:TaskRegistry
+make_terrain	legged_gym/utils/terrain.py	/^    def make_terrain(self, choice, difficulty):$/;"	m	class:Terrain
+max_angular_velocity	legged_gym/envs/base/legged_robot_config.py	/^        max_angular_velocity = 1000.$/;"	v	class:LeggedRobotCfg.asset
+max_contact_force	legged_gym/envs/anymal_c/flat/anymal_c_flat_config.py	/^        max_contact_force = 350.$/;"	v	class:AnymalCFlatCfg.rewards
+max_contact_force	legged_gym/envs/anymal_c/mixed_terrains/anymal_c_rough_config.py	/^        max_contact_force = 500.$/;"	v	class:AnymalCRoughCfg.rewards
+max_contact_force	legged_gym/envs/base/legged_robot_config.py	/^        max_contact_force = 100. # forces above this value are penalized$/;"	v	class:LeggedRobotCfg.rewards
+max_contact_force	legged_gym/envs/cassie/cassie_config.py	/^        max_contact_force = 300.$/;"	v	class:CassieRoughCfg.rewards
+max_curriculum	legged_gym/envs/base/legged_robot_config.py	/^        max_curriculum = 1.$/;"	v	class:LeggedRobotCfg.commands
+max_depenetration_velocity	legged_gym/envs/base/legged_robot_config.py	/^            max_depenetration_velocity = 1.0$/;"	v	class:LeggedRobotCfg.sim.physx
+max_gpu_contact_pairs	legged_gym/envs/base/legged_robot_config.py	/^            max_gpu_contact_pairs = 2**23 #2**24 -> needed for 8000 envs and more$/;"	v	class:LeggedRobotCfg.sim.physx
+max_grad_norm	legged_gym/envs/base/legged_robot_config.py	/^        max_grad_norm = 1.$/;"	v	class:LeggedRobotCfgPPO.algorithm
+max_init_terrain_level	legged_gym/envs/base/legged_robot_config.py	/^        max_init_terrain_level = 5 # starting curriculum state$/;"	v	class:LeggedRobotCfg.terrain
+max_iterations	legged_gym/envs/anymal_c/flat/anymal_c_flat_config.py	/^        max_iterations = 300$/;"	v	class:AnymalCFlatCfgPPO.runner
+max_iterations	legged_gym/envs/base/legged_robot_config.py	/^        max_iterations = 1500 # number of policy updates$/;"	v	class:LeggedRobotCfgPPO.runner
+max_linear_velocity	legged_gym/envs/base/legged_robot_config.py	/^        max_linear_velocity = 1000.$/;"	v	class:LeggedRobotCfg.asset
+max_push_vel_xy	legged_gym/envs/base/legged_robot_config.py	/^        max_push_vel_xy = 1.$/;"	v	class:LeggedRobotCfg.domain_rand
+measure_heights	legged_gym/envs/anymal_c/flat/anymal_c_flat_config.py	/^        measure_heights = False$/;"	v	class:AnymalCFlatCfg.terrain
+measure_heights	legged_gym/envs/base/legged_robot_config.py	/^        measure_heights = True$/;"	v	class:LeggedRobotCfg.terrain
+measured_points_x	legged_gym/envs/base/legged_robot_config.py	/^        measured_points_x = [-0.8, -0.7, -0.6, -0.5, -0.4, -0.3, -0.2, -0.1, 0., 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8] # 1mx1.6m rectangle (without center line)$/;"	v	class:LeggedRobotCfg.terrain
+measured_points_x	legged_gym/envs/cassie/cassie_config.py	/^        measured_points_x = [-0.5, -0.4, -0.3, -0.2, -0.1, 0., 0.1, 0.2, 0.3, 0.4, 0.5] # 1mx1m rectangle (without center line)$/;"	v	class:CassieRoughCfg.terrain
+measured_points_y	legged_gym/envs/base/legged_robot_config.py	/^        measured_points_y = [-0.5, -0.4, -0.3, -0.2, -0.1, 0., 0.1, 0.2, 0.3, 0.4, 0.5]$/;"	v	class:LeggedRobotCfg.terrain
+measured_points_y	legged_gym/envs/cassie/cassie_config.py	/^        measured_points_y = [-0.5, -0.4, -0.3, -0.2, -0.1, 0., 0.1, 0.2, 0.3, 0.4, 0.5]$/;"	v	class:CassieRoughCfg.terrain
+mesh_type	legged_gym/envs/anymal_c/flat/anymal_c_flat_config.py	/^        mesh_type = 'plane'$/;"	v	class:AnymalCFlatCfg.terrain
+mesh_type	legged_gym/envs/anymal_c/mixed_terrains/anymal_c_rough_config.py	/^        mesh_type = 'trimesh'$/;"	v	class:AnymalCRoughCfg.terrain
+mesh_type	legged_gym/envs/base/legged_robot_config.py	/^        mesh_type = 'trimesh' # "heightfield" # none, plane, heightfield or trimesh$/;"	v	class:LeggedRobotCfg.terrain
+name	legged_gym/envs/a1/a1_config.py	/^        name = "a1"$/;"	v	class:A1RoughCfg.asset
+name	legged_gym/envs/anymal_b/anymal_b_config.py	/^        name = "anymal_b"$/;"	v	class:AnymalBRoughCfg.asset
+name	legged_gym/envs/anymal_c/mixed_terrains/anymal_c_rough_config.py	/^        name = "anymal_c"$/;"	v	class:AnymalCRoughCfg.asset
+name	legged_gym/envs/base/legged_robot_config.py	/^        name = "legged_robot"  # actor name$/;"	v	class:LeggedRobotCfg.asset
+name	legged_gym/envs/cassie/cassie_config.py	/^        name = "cassie"$/;"	v	class:CassieRoughCfg.asset
+name	setup.py	/^    name='legged_gym',$/;"	v
+no_fly	legged_gym/envs/cassie/cassie_config.py	/^            no_fly = 0.25$/;"	v	class:CassieRoughCfg.rewards.scales
+noise	legged_gym/envs/base/legged_robot_config.py	/^    class noise:$/;"	c	class:LeggedRobotCfg
+noise_level	legged_gym/envs/base/legged_robot_config.py	/^        noise_level = 1.0 # scales other values$/;"	v	class:LeggedRobotCfg.noise
+noise_scales	legged_gym/envs/base/legged_robot_config.py	/^        class noise_scales:$/;"	c	class:LeggedRobotCfg.noise
+normalization	legged_gym/envs/base/legged_robot_config.py	/^    class normalization:$/;"	c	class:LeggedRobotCfg
+num_actions	legged_gym/envs/anymal_c/mixed_terrains/anymal_c_rough_config.py	/^        num_actions = 12$/;"	v	class:AnymalCRoughCfg.env
+num_actions	legged_gym/envs/base/legged_robot_config.py	/^        num_actions = 12$/;"	v	class:LeggedRobotCfg.env
+num_actions	legged_gym/envs/cassie/cassie_config.py	/^        num_actions = 12$/;"	v	class:CassieRoughCfg.env
+num_cols	legged_gym/envs/base/legged_robot_config.py	/^        num_cols = 20 # number of terrain cols (types)$/;"	v	class:LeggedRobotCfg.terrain
+num_commands	legged_gym/envs/base/legged_robot_config.py	/^        num_commands = 4 # default: lin_vel_x, lin_vel_y, ang_vel_yaw, heading (in heading mode ang_vel_yaw is recomputed from heading error)$/;"	v	class:LeggedRobotCfg.commands
+num_envs	legged_gym/envs/anymal_c/mixed_terrains/anymal_c_rough_config.py	/^        num_envs = 4096$/;"	v	class:AnymalCRoughCfg.env
+num_envs	legged_gym/envs/base/legged_robot_config.py	/^        num_envs = 4096$/;"	v	class:LeggedRobotCfg.env
+num_envs	legged_gym/envs/cassie/cassie_config.py	/^        num_envs = 4096$/;"	v	class:CassieRoughCfg.env
+num_learning_epochs	legged_gym/envs/base/legged_robot_config.py	/^        num_learning_epochs = 5$/;"	v	class:LeggedRobotCfgPPO.algorithm
+num_mini_batches	legged_gym/envs/base/legged_robot_config.py	/^        num_mini_batches = 4 # mini batch size = num_envs*nsteps \/ nminibatches$/;"	v	class:LeggedRobotCfgPPO.algorithm
+num_observations	legged_gym/envs/anymal_c/flat/anymal_c_flat_config.py	/^        num_observations = 48$/;"	v	class:AnymalCFlatCfg.env
+num_observations	legged_gym/envs/base/legged_robot_config.py	/^        num_observations = 235$/;"	v	class:LeggedRobotCfg.env
+num_observations	legged_gym/envs/cassie/cassie_config.py	/^        num_observations = 169$/;"	v	class:CassieRoughCfg.env
+num_position_iterations	legged_gym/envs/base/legged_robot_config.py	/^            num_position_iterations = 4$/;"	v	class:LeggedRobotCfg.sim.physx
+num_privileged_obs	legged_gym/envs/base/legged_robot_config.py	/^        num_privileged_obs = None # if not None a priviledge_obs_buf will be returned by step() (critic obs for assymetric training). None is returned otherwise $/;"	v	class:LeggedRobotCfg.env
+num_rows	legged_gym/envs/base/legged_robot_config.py	/^        num_rows= 10 # number of terrain rows (levels)$/;"	v	class:LeggedRobotCfg.terrain
+num_steps_per_env	legged_gym/envs/base/legged_robot_config.py	/^        num_steps_per_env = 24 # per iteration$/;"	v	class:LeggedRobotCfgPPO.runner
+num_threads	legged_gym/envs/base/legged_robot_config.py	/^            num_threads = 10$/;"	v	class:LeggedRobotCfg.sim.physx
+num_velocity_iterations	legged_gym/envs/base/legged_robot_config.py	/^            num_velocity_iterations = 0$/;"	v	class:LeggedRobotCfg.sim.physx
+obs_scales	legged_gym/envs/base/legged_robot_config.py	/^        class obs_scales:$/;"	c	class:LeggedRobotCfg.normalization
+only_positive_rewards	legged_gym/envs/anymal_c/mixed_terrains/anymal_c_rough_config.py	/^        only_positive_rewards = True$/;"	v	class:AnymalCRoughCfg.rewards
+only_positive_rewards	legged_gym/envs/base/legged_robot_config.py	/^        only_positive_rewards = True # if true negative total rewards are clipped at zero (avoids early termination problems)$/;"	v	class:LeggedRobotCfg.rewards
+only_positive_rewards	legged_gym/envs/cassie/cassie_config.py	/^        only_positive_rewards = False$/;"	v	class:CassieRoughCfg.rewards
+orientation	legged_gym/envs/anymal_c/flat/anymal_c_flat_config.py	/^            orientation = -5.0$/;"	v	class:AnymalCFlatCfg.rewards.scales
+orientation	legged_gym/envs/base/legged_robot_config.py	/^            orientation = -0.$/;"	v	class:LeggedRobotCfg.rewards.scales
+packages	setup.py	/^    packages=find_packages(),$/;"	v
+parse_sim_params	legged_gym/utils/helpers.py	/^def parse_sim_params(args, cfg):$/;"	f
+penalize_contacts_on	legged_gym/envs/a1/a1_config.py	/^        penalize_contacts_on = ["thigh", "calf"]$/;"	v	class:A1RoughCfg.asset
+penalize_contacts_on	legged_gym/envs/anymal_c/mixed_terrains/anymal_c_rough_config.py	/^        penalize_contacts_on = ["SHANK", "THIGH"]$/;"	v	class:AnymalCRoughCfg.asset
+penalize_contacts_on	legged_gym/envs/base/legged_robot_config.py	/^        penalize_contacts_on = []$/;"	v	class:LeggedRobotCfg.asset
+physx	legged_gym/envs/base/legged_robot_config.py	/^        class physx:$/;"	c	class:LeggedRobotCfg.sim
+pit_terrain	legged_gym/utils/terrain.py	/^def pit_terrain(terrain, depth, platform_size=1.):$/;"	f
+play	legged_gym/scripts/play.py	/^def play(args):$/;"	f
+plot_states	legged_gym/utils/logger.py	/^    def plot_states(self):$/;"	m	class:Logger
+policy	legged_gym/envs/anymal_c/flat/anymal_c_flat_config.py	/^    class policy( AnymalCRoughCfgPPO.policy ):$/;"	c	class:AnymalCFlatCfgPPO
+policy	legged_gym/envs/base/legged_robot_config.py	/^    class policy:$/;"	c	class:LeggedRobotCfgPPO
+policy_class_name	legged_gym/envs/base/legged_robot_config.py	/^        policy_class_name = 'ActorCritic'$/;"	v	class:LeggedRobotCfgPPO.runner
+pos	legged_gym/envs/a1/a1_config.py	/^        pos = [0.0, 0.0, 0.42] # x,y,z [m]$/;"	v	class:A1RoughCfg.init_state
+pos	legged_gym/envs/anymal_c/mixed_terrains/anymal_c_rough_config.py	/^        pos = [0.0, 0.0, 0.6] # x,y,z [m]$/;"	v	class:AnymalCRoughCfg.init_state
+pos	legged_gym/envs/base/legged_robot_config.py	/^        pos = [0.0, 0.0, 1.] # x,y,z [m]$/;"	v	class:LeggedRobotCfg.init_state
+pos	legged_gym/envs/base/legged_robot_config.py	/^        pos = [10, 0, 6]  # [m]$/;"	v	class:LeggedRobotCfg.viewer
+pos	legged_gym/envs/cassie/cassie_config.py	/^        pos = [0.0, 0.0, 1.] # x,y,z [m]$/;"	v	class:CassieRoughCfg.init_state
+post_physics_step	legged_gym/envs/base/legged_robot.py	/^    def post_physics_step(self):$/;"	m	class:LeggedRobot
+print_rewards	legged_gym/utils/logger.py	/^    def print_rewards(self):$/;"	m	class:Logger
+push_interval_s	legged_gym/envs/base/legged_robot_config.py	/^        push_interval_s = 15$/;"	v	class:LeggedRobotCfg.domain_rand
+push_robots	legged_gym/envs/base/legged_robot_config.py	/^        push_robots = True$/;"	v	class:LeggedRobotCfg.domain_rand
+quat_apply_yaw	legged_gym/utils/math.py	/^def quat_apply_yaw(quat, vec):$/;"	f
+randomize_base_mass	legged_gym/envs/anymal_c/mixed_terrains/anymal_c_rough_config.py	/^        randomize_base_mass = True$/;"	v	class:AnymalCRoughCfg.domain_rand
+randomize_base_mass	legged_gym/envs/base/legged_robot_config.py	/^        randomize_base_mass = False$/;"	v	class:LeggedRobotCfg.domain_rand
+randomize_friction	legged_gym/envs/base/legged_robot_config.py	/^        randomize_friction = True$/;"	v	class:LeggedRobotCfg.domain_rand
+randomized_terrain	legged_gym/utils/terrain.py	/^    def randomized_terrain(self):$/;"	m	class:Terrain
+ranges	legged_gym/envs/anymal_c/flat/anymal_c_flat_config.py	/^        class ranges( AnymalCRoughCfg.commands.ranges ):$/;"	c	class:AnymalCFlatCfg.commands
+ranges	legged_gym/envs/base/legged_robot_config.py	/^        class ranges:$/;"	c	class:LeggedRobotCfg.commands
+ref_env	legged_gym/envs/base/legged_robot_config.py	/^        ref_env = 0$/;"	v	class:LeggedRobotCfg.viewer
+register	legged_gym/utils/task_registry.py	/^    def register(self, name: str, task_class: VecEnv, env_cfg: LeggedRobotCfg, train_cfg: LeggedRobotCfgPPO):$/;"	m	class:TaskRegistry
+render	legged_gym/envs/base/base_task.py	/^    def render(self, sync_frame_time=True):$/;"	m	class:BaseTask
+replace_cylinder_with_capsule	legged_gym/envs/base/legged_robot_config.py	/^        replace_cylinder_with_capsule = True # replace collision cylinders with capsules, leads to faster\/more stable simulation$/;"	v	class:LeggedRobotCfg.asset
+resampling_time	legged_gym/envs/anymal_c/flat/anymal_c_flat_config.py	/^        resampling_time = 4.$/;"	v	class:AnymalCFlatCfg.commands
+resampling_time	legged_gym/envs/base/legged_robot_config.py	/^        resampling_time = 10. # time before command are changed[s]$/;"	v	class:LeggedRobotCfg.commands
+reset	legged_gym/envs/base/base_task.py	/^    def reset(self):$/;"	m	class:BaseTask
+reset	legged_gym/utils/logger.py	/^    def reset(self):$/;"	m	class:Logger
+reset_idx	legged_gym/envs/anymal_c/anymal.py	/^    def reset_idx(self, env_ids):$/;"	m	class:Anymal
+reset_idx	legged_gym/envs/base/base_task.py	/^    def reset_idx(self, env_ids):$/;"	m	class:BaseTask
+reset_idx	legged_gym/envs/base/legged_robot.py	/^    def reset_idx(self, env_ids):$/;"	m	class:LeggedRobot
+reset_memory	legged_gym/utils/helpers.py	/^    def reset_memory(self):$/;"	m	class:PolicyExporterLSTM
+rest_offset	legged_gym/envs/base/legged_robot_config.py	/^            rest_offset = 0.0   # [m]$/;"	v	class:LeggedRobotCfg.sim.physx
+restitution	legged_gym/envs/base/legged_robot_config.py	/^        restitution = 0.$/;"	v	class:LeggedRobotCfg.terrain
+resume	legged_gym/envs/base/legged_robot_config.py	/^        resume = False$/;"	v	class:LeggedRobotCfgPPO.runner
+resume_path	legged_gym/envs/base/legged_robot_config.py	/^        resume_path = None # updated from load_run and chkpt/;"	v	class:LeggedRobotCfgPPO.runner
+rewards	legged_gym/envs/a1/a1_config.py	/^    class rewards( LeggedRobotCfg.rewards ):$/;"	c	class:A1RoughCfg
+rewards	legged_gym/envs/anymal_b/anymal_b_config.py	/^    class rewards( AnymalCRoughCfg.rewards ):$/;"	c	class:AnymalBRoughCfg
+rewards	legged_gym/envs/anymal_c/flat/anymal_c_flat_config.py	/^    class rewards( AnymalCRoughCfg.rewards ):$/;"	c	class:AnymalCFlatCfg
+rewards	legged_gym/envs/anymal_c/mixed_terrains/anymal_c_rough_config.py	/^    class rewards( LeggedRobotCfg.rewards ):$/;"	c	class:AnymalCRoughCfg
+rewards	legged_gym/envs/base/legged_robot_config.py	/^    class rewards:$/;"	c	class:LeggedRobotCfg
+rewards	legged_gym/envs/cassie/cassie_config.py	/^    class rewards( LeggedRobotCfg.rewards ):$/;"	c	class:CassieRoughCfg
+rot	legged_gym/envs/base/legged_robot_config.py	/^        rot = [0.0, 0.0, 0.0, 1.0] # x,y,z,w [quat]$/;"	v	class:LeggedRobotCfg.init_state
+run_name	legged_gym/envs/a1/a1_config.py	/^        run_name = ''$/;"	v	class:A1RoughCfgPPO.runner
+run_name	legged_gym/envs/anymal_b/anymal_b_config.py	/^        run_name = ''$/;"	v	class:AnymalBRoughCfgPPO.runner
+run_name	legged_gym/envs/anymal_c/flat/anymal_c_flat_config.py	/^        run_name = ''$/;"	v	class:AnymalCFlatCfgPPO.runner
+run_name	legged_gym/envs/anymal_c/mixed_terrains/anymal_c_rough_config.py	/^        run_name = ''$/;"	v	class:AnymalCRoughCfgPPO.runner
+run_name	legged_gym/envs/base/legged_robot_config.py	/^        run_name = ''$/;"	v	class:LeggedRobotCfgPPO.runner
+run_name	legged_gym/envs/cassie/cassie_config.py	/^        run_name = ''$/;"	v	class:CassieRoughCfgPPO.runner
+runner	legged_gym/envs/a1/a1_config.py	/^    class runner( LeggedRobotCfgPPO.runner ):$/;"	c	class:A1RoughCfgPPO
+runner	legged_gym/envs/anymal_b/anymal_b_config.py	/^    class runner ( AnymalCRoughCfgPPO.runner):$/;"	c	class:AnymalBRoughCfgPPO
+runner	legged_gym/envs/anymal_c/flat/anymal_c_flat_config.py	/^    class runner ( AnymalCRoughCfgPPO.runner):$/;"	c	class:AnymalCFlatCfgPPO
+runner	legged_gym/envs/anymal_c/mixed_terrains/anymal_c_rough_config.py	/^    class runner( LeggedRobotCfgPPO.runner ):$/;"	c	class:AnymalCRoughCfgPPO
+runner	legged_gym/envs/base/legged_robot_config.py	/^    class runner:$/;"	c	class:LeggedRobotCfgPPO
+runner	legged_gym/envs/cassie/cassie_config.py	/^    class runner( LeggedRobotCfgPPO.runner ):$/;"	c	class:CassieRoughCfgPPO
+runner_class_name	legged_gym/envs/base/legged_robot_config.py	/^    runner_class_name = 'OnPolicyRunner'$/;"	v	class:LeggedRobotCfgPPO
+save_interval	legged_gym/envs/base/legged_robot_config.py	/^        save_interval = 50 # check for potential saves every this many iterations$/;"	v	class:LeggedRobotCfgPPO.runner
+scales	legged_gym/envs/a1/a1_config.py	/^        class scales( LeggedRobotCfg.rewards.scales ):$/;"	c	class:A1RoughCfg.rewards
+scales	legged_gym/envs/anymal_b/anymal_b_config.py	/^        class scales ( AnymalCRoughCfg.rewards.scales ):$/;"	c	class:AnymalBRoughCfg.rewards
+scales	legged_gym/envs/anymal_c/flat/anymal_c_flat_config.py	/^        class scales ( AnymalCRoughCfg.rewards.scales ):$/;"	c	class:AnymalCFlatCfg.rewards
+scales	legged_gym/envs/anymal_c/mixed_terrains/anymal_c_rough_config.py	/^        class scales( LeggedRobotCfg.rewards.scales ):$/;"	c	class:AnymalCRoughCfg.rewards
+scales	legged_gym/envs/base/legged_robot_config.py	/^        class scales:$/;"	c	class:LeggedRobotCfg.rewards
+scales	legged_gym/envs/cassie/cassie_config.py	/^        class scales( LeggedRobotCfg.rewards.scales ):$/;"	c	class:CassieRoughCfg.rewards
+schedule	legged_gym/envs/base/legged_robot_config.py	/^        schedule = 'adaptive' # could be adaptive, fixed$/;"	v	class:LeggedRobotCfgPPO.algorithm
+seed	legged_gym/envs/base/legged_robot_config.py	/^    seed = 1$/;"	v	class:LeggedRobotCfgPPO
+selected	legged_gym/envs/base/legged_robot_config.py	/^        selected = False # select a unique terrain type and pass all arguments$/;"	v	class:LeggedRobotCfg.terrain
+selected_terrain	legged_gym/utils/terrain.py	/^    def selected_terrain(self):$/;"	m	class:Terrain
+self_collisions	legged_gym/envs/a1/a1_config.py	/^        self_collisions = 1 # 1 to disable, 0 to enable...bitwise filter$/;"	v	class:A1RoughCfg.asset
+self_collisions	legged_gym/envs/anymal_c/flat/anymal_c_flat_config.py	/^        self_collisions = 0 # 1 to disable, 0 to enable...bitwise filter$/;"	v	class:AnymalCFlatCfg.asset
+self_collisions	legged_gym/envs/anymal_c/mixed_terrains/anymal_c_rough_config.py	/^        self_collisions = 1 # 1 to disable, 0 to enable...bitwise filter$/;"	v	class:AnymalCRoughCfg.asset
+self_collisions	legged_gym/envs/base/legged_robot_config.py	/^        self_collisions = 0 # 1 to disable, 0 to enable...bitwise filter$/;"	v	class:LeggedRobotCfg.asset
+self_collisions	legged_gym/envs/cassie/cassie_config.py	/^        self_collisions = 1 # 1 to disable, 0 to enable...bitwise filter$/;"	v	class:CassieRoughCfg.asset
+send_timeouts	legged_gym/envs/base/legged_robot_config.py	/^        send_timeouts = True # send time out information to the algorithm$/;"	v	class:LeggedRobotCfg.env
+set_camera	legged_gym/envs/base/legged_robot.py	/^    def set_camera(self, position, lookat):$/;"	m	class:LeggedRobot
+set_seed	legged_gym/utils/helpers.py	/^def set_seed(seed):$/;"	f
+sim	legged_gym/envs/base/legged_robot_config.py	/^    class sim:$/;"	c	class:LeggedRobotCfg
+slope_treshold	legged_gym/envs/base/legged_robot_config.py	/^        slope_treshold = 0.75 # slopes above this threshold will be corrected to vertical surfaces$/;"	v	class:LeggedRobotCfg.terrain
+soft_dof_pos_limit	legged_gym/envs/a1/a1_config.py	/^        soft_dof_pos_limit = 0.9$/;"	v	class:A1RoughCfg.rewards
+soft_dof_pos_limit	legged_gym/envs/base/legged_robot_config.py	/^        soft_dof_pos_limit = 1. # percentage of urdf limits, values above this limit are penalized$/;"	v	class:LeggedRobotCfg.rewards
+soft_dof_pos_limit	legged_gym/envs/cassie/cassie_config.py	/^        soft_dof_pos_limit = 0.95$/;"	v	class:CassieRoughCfg.rewards
+soft_dof_vel_limit	legged_gym/envs/base/legged_robot_config.py	/^        soft_dof_vel_limit = 1.$/;"	v	class:LeggedRobotCfg.rewards
+soft_dof_vel_limit	legged_gym/envs/cassie/cassie_config.py	/^        soft_dof_vel_limit = 0.9$/;"	v	class:CassieRoughCfg.rewards
+soft_torque_limit	legged_gym/envs/base/legged_robot_config.py	/^        soft_torque_limit = 1.$/;"	v	class:LeggedRobotCfg.rewards
+soft_torque_limit	legged_gym/envs/cassie/cassie_config.py	/^        soft_torque_limit = 0.9$/;"	v	class:CassieRoughCfg.rewards
+solver_type	legged_gym/envs/base/legged_robot_config.py	/^            solver_type = 1  # 0: pgs, 1: tgs$/;"	v	class:LeggedRobotCfg.sim.physx
+stand_still	legged_gym/envs/base/legged_robot_config.py	/^            stand_still = -0.$/;"	v	class:LeggedRobotCfg.rewards.scales
+static_friction	legged_gym/envs/base/legged_robot_config.py	/^        static_friction = 1.0$/;"	v	class:LeggedRobotCfg.terrain
+step	legged_gym/envs/base/base_task.py	/^    def step(self, actions):$/;"	m	class:BaseTask
+step	legged_gym/envs/base/legged_robot.py	/^    def step(self, actions):$/;"	m	class:LeggedRobot
+stiffness	legged_gym/envs/a1/a1_config.py	/^        stiffness = {'joint': 20.}  # [N*m\/rad]$/;"	v	class:A1RoughCfg.control
+stiffness	legged_gym/envs/anymal_c/mixed_terrains/anymal_c_rough_config.py	/^        stiffness = {'HAA': 80., 'HFE': 80., 'KFE': 80.}  # [N*m\/rad]$/;"	v	class:AnymalCRoughCfg.control
+stiffness	legged_gym/envs/base/legged_robot_config.py	/^        stiffness = {'joint_a': 10.0, 'joint_b': 15.}  # [N*m\/rad]$/;"	v	class:LeggedRobotCfg.control
+stiffness	legged_gym/envs/cassie/cassie_config.py	/^        stiffness = {   'hip_abduction': 100.0, 'hip_rotation': 100.0,$/;"	v	class:CassieRoughCfg.control
+substeps	legged_gym/envs/base/legged_robot_config.py	/^        substeps = 1$/;"	v	class:LeggedRobotCfg.sim
+task_registry	legged_gym/utils/task_registry.py	/^task_registry = TaskRegistry()$/;"	v
+terminate_after_contacts_on	legged_gym/envs/a1/a1_config.py	/^        terminate_after_contacts_on = ["base"]$/;"	v	class:A1RoughCfg.asset
+terminate_after_contacts_on	legged_gym/envs/anymal_c/mixed_terrains/anymal_c_rough_config.py	/^        terminate_after_contacts_on = ["base"]$/;"	v	class:AnymalCRoughCfg.asset
+terminate_after_contacts_on	legged_gym/envs/base/legged_robot_config.py	/^        terminate_after_contacts_on = []$/;"	v	class:LeggedRobotCfg.asset
+terminate_after_contacts_on	legged_gym/envs/cassie/cassie_config.py	/^        terminate_after_contacts_on = ['pelvis']$/;"	v	class:CassieRoughCfg.asset
+termination	legged_gym/envs/base/legged_robot_config.py	/^            termination = -0.0$/;"	v	class:LeggedRobotCfg.rewards.scales
+termination	legged_gym/envs/cassie/cassie_config.py	/^            termination = -200.$/;"	v	class:CassieRoughCfg.rewards.scales
+terrain	legged_gym/envs/anymal_c/flat/anymal_c_flat_config.py	/^    class terrain( AnymalCRoughCfg.terrain ):$/;"	c	class:AnymalCFlatCfg
+terrain	legged_gym/envs/anymal_c/mixed_terrains/anymal_c_rough_config.py	/^    class terrain( LeggedRobotCfg.terrain ):$/;"	c	class:AnymalCRoughCfg
+terrain	legged_gym/envs/base/legged_robot_config.py	/^    class terrain:$/;"	c	class:LeggedRobotCfg
+terrain	legged_gym/envs/cassie/cassie_config.py	/^    class terrain( LeggedRobotCfg.terrain):$/;"	c	class:CassieRoughCfg
+terrain_kwargs	legged_gym/envs/base/legged_robot_config.py	/^        terrain_kwargs = None # Dict of arguments for selected terrain$/;"	v	class:LeggedRobotCfg.terrain
+terrain_length	legged_gym/envs/base/legged_robot_config.py	/^        terrain_length = 8.$/;"	v	class:LeggedRobotCfg.terrain
+terrain_proportions	legged_gym/envs/base/legged_robot_config.py	/^        terrain_proportions = [0.1, 0.1, 0.35, 0.25, 0.2]$/;"	v	class:LeggedRobotCfg.terrain
+terrain_width	legged_gym/envs/base/legged_robot_config.py	/^        terrain_width = 8.$/;"	v	class:LeggedRobotCfg.terrain
+test_env	legged_gym/tests/test_env.py	/^def test_env(args):$/;"	f
+thickness	legged_gym/envs/base/legged_robot_config.py	/^        thickness = 0.01$/;"	v	class:LeggedRobotCfg.asset
+torch_rand_sqrt_float	legged_gym/utils/math.py	/^def torch_rand_sqrt_float(lower, upper, shape, device):$/;"	f
+torques	legged_gym/envs/a1/a1_config.py	/^            torques = -0.0002$/;"	v	class:A1RoughCfg.rewards.scales
+torques	legged_gym/envs/anymal_c/flat/anymal_c_flat_config.py	/^            torques = -0.000025$/;"	v	class:AnymalCFlatCfg.rewards.scales
+torques	legged_gym/envs/base/legged_robot_config.py	/^            torques = -0.00001$/;"	v	class:LeggedRobotCfg.rewards.scales
+torques	legged_gym/envs/cassie/cassie_config.py	/^            torques = -5.e-6$/;"	v	class:CassieRoughCfg.rewards.scales
+tracking_ang_vel	legged_gym/envs/base/legged_robot_config.py	/^            tracking_ang_vel = 0.5$/;"	v	class:LeggedRobotCfg.rewards.scales
+tracking_ang_vel	legged_gym/envs/cassie/cassie_config.py	/^            tracking_ang_vel = 1.0$/;"	v	class:CassieRoughCfg.rewards.scales
+tracking_lin_vel	legged_gym/envs/base/legged_robot_config.py	/^            tracking_lin_vel = 1.0$/;"	v	class:LeggedRobotCfg.rewards.scales
+tracking_sigma	legged_gym/envs/base/legged_robot_config.py	/^        tracking_sigma = 0.25 # tracking reward = exp(-error^2\/sigma)$/;"	v	class:LeggedRobotCfg.rewards
+train	legged_gym/scripts/train.py	/^def train(args):$/;"	f
+up_axis	legged_gym/envs/base/legged_robot_config.py	/^        up_axis = 1  # 0 is y, 1 is z$/;"	v	class:LeggedRobotCfg.sim
+update_cfg_from_args	legged_gym/utils/helpers.py	/^def update_cfg_from_args(env_cfg, cfg_train, args):$/;"	f
+update_class_from_dict	legged_gym/utils/helpers.py	/^def update_class_from_dict(obj, dict):$/;"	f
+update_command_curriculum	legged_gym/envs/base/legged_robot.py	/^    def update_command_curriculum(self, env_ids):$/;"	m	class:LeggedRobot
+use_actuator_network	legged_gym/envs/anymal_c/mixed_terrains/anymal_c_rough_config.py	/^        use_actuator_network = True$/;"	v	class:AnymalCRoughCfg.control
+use_clipped_value_loss	legged_gym/envs/base/legged_robot_config.py	/^        use_clipped_value_loss = True$/;"	v	class:LeggedRobotCfgPPO.algorithm
+value_loss_coef	legged_gym/envs/base/legged_robot_config.py	/^        value_loss_coef = 1.0$/;"	v	class:LeggedRobotCfgPPO.algorithm
+version	setup.py	/^    version='1.0.0',$/;"	v
+vertical_scale	legged_gym/envs/base/legged_robot_config.py	/^        vertical_scale = 0.005 # [m]$/;"	v	class:LeggedRobotCfg.terrain
+viewer	legged_gym/envs/base/legged_robot_config.py	/^    class viewer:$/;"	c	class:LeggedRobotCfg
+wrap_to_pi	legged_gym/utils/math.py	/^def wrap_to_pi(angles):$/;"	f

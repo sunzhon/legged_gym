@@ -79,3 +79,4 @@ class Anymal(LeggedRobot):
         else:
             # pd controller
             return super()._compute_torques(actions)    
+

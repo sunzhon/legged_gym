@@ -136,7 +136,7 @@ class LeggedRobotCfg(BaseConfig):
             ang_vel_xy = -0.05
             orientation = -0.
             torques = -0.00001
-            dof_vel = -0.
+            dof_vel = -0.00001
             dof_acc = -2.5e-7
             base_height = -0. 
             feet_air_time =  1.0
@@ -153,6 +153,9 @@ class LeggedRobotCfg(BaseConfig):
         base_height_target = 1.
         max_contact_force = 100. # forces above this value are penalized
 
+
+
+
     class normalization:
         class obs_scales:
             lin_vel = 2.0
@@ -168,9 +171,9 @@ class LeggedRobotCfg(BaseConfig):
         noise_level = 1.0 # scales other values
         class noise_scales:
             dof_pos = 0.01
-            dof_vel = 1.5
+            dof_vel = 0.1
             lin_vel = 0.1
-            ang_vel = 0.2
+            ang_vel = 0.1
             gravity = 0.05
             height_measurements = 0.1
 
@@ -179,6 +182,8 @@ class LeggedRobotCfg(BaseConfig):
         ref_env = 0
         pos = [10, 0, 6]  # [m]
         lookat = [11., 5, 3.]  # [m]
+        #pos = [4, 3, 3]  # [m]
+        #lookat = [0.2, 0, .2]  # [m]
 
     class sim:
         dt =  0.005

@@ -51,7 +51,7 @@ from .legged_robot_config import LeggedRobotCfg
 class LeggedRobot(BaseTask):
     def __init__(self, cfg: LeggedRobotCfg, sim_params, physics_engine, sim_device, headless):
         """ Parses the provided config file,
-            calls create_sim() (which creates, simulation, terrain and environments),
+            calls create_sim() (which creates simulation, terrain and environments),
             initilizes pytorch buffers used during training
 
         Args:
@@ -470,11 +470,11 @@ class LeggedRobot(BaseTask):
         noise_vec[3:6] = noise_scales.ang_vel * noise_level * self.obs_scales.ang_vel
         noise_vec[6:9] = noise_scales.gravity * noise_level
         noise_vec[9:12] = 0. # commands
-        noise_vec[12:24] = noise_scales.dof_pos * noise_level * self.obs_scales.dof_pos
-        noise_vec[24:36] = noise_scales.dof_vel * noise_level * self.obs_scales.dof_vel
-        noise_vec[36:48] = 0. # previous actions
+        noise_vec[12:12+self.cfg.env.num_actions] = noise_scales.dof_pos * noise_level * self.obs_scales.dof_pos
+        noise_vec[12+self.cfg.env.num_actions:12+2*self.cfg.env.num_actions] = noise_scales.dof_vel * noise_level * self.obs_scales.dof_vel
+        noise_vec[12+2*self.cfg.env.num_actions:12+3*self.cfg.env.num_actions] = 0. # previous actions
         if self.cfg.terrain.measure_heights:
-            noise_vec[48:235] = noise_scales.height_measurements* noise_level * self.obs_scales.height_measurements
+            noise_vec[12+3*self.cfg.env.num_actions:235] = noise_scales.height_measurements* noise_level * self.obs_scales.height_measurements
         return noise_vec
 
     #----------------------------------------
@@ -539,6 +539,7 @@ class LeggedRobot(BaseTask):
                 self.d_gains[i] = 0.
                 if self.cfg.control.control_type in ["P", "V"]:
                     print(f"PD gain of joint {name} were not defined, setting them to zero")
+                    exit(-1)
         self.default_dof_pos = self.default_dof_pos.unsqueeze(0)
 
     def _prepare_reward_function(self):
@@ -904,3 +905,5 @@ class LeggedRobot(BaseTask):
     def _reward_feet_contact_forces(self):
         # penalize high contact forces
         return torch.sum((torch.norm(self.contact_forces[:, self.feet_indices, :], dim=-1) -  self.cfg.rewards.max_contact_force).clip(min=0.), dim=1)
+
+

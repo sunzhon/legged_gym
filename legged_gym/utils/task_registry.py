@@ -40,13 +40,15 @@ from rsl_rl.runners import OnPolicyRunner
 from legged_gym import LEGGED_GYM_ROOT_DIR, LEGGED_GYM_ENVS_DIR
 from .helpers import get_args, update_cfg_from_args, class_to_dict, get_load_path, set_seed, parse_sim_params
 from legged_gym.envs.base.legged_robot_config import LeggedRobotCfg, LeggedRobotCfgPPO
+import pdb
 
 class TaskRegistry():
     def __init__(self):
-        self.task_classes = {}
-        self.env_cfgs = {}
-        self.train_cfgs = {}
+        self.task_classes = {} # tasks
+        self.env_cfgs = {} # environment 
+        self.train_cfgs = {} # traning of model 
     
+    # task, environment-robot cfg, (agent, actor, critic) learning method (training cfg)
     def register(self, name: str, task_class: VecEnv, env_cfg: LeggedRobotCfg, train_cfg: LeggedRobotCfgPPO):
         self.task_classes[name] = task_class
         self.env_cfgs[name] = env_cfg
@@ -55,7 +57,7 @@ class TaskRegistry():
     def get_task_class(self, name: str) -> VecEnv:
         return self.task_classes[name]
     
-    def get_cfgs(self, name) -> Tuple[LeggedRobotCfg, LeggedRobotCfgPPO]:
+    def get_cfgs(self, name) -> Tuple[LeggedRobotCfg, LeggedRobotCfgPPO]: # get env-agent and learning cfgs
         train_cfg = self.train_cfgs[name]
         env_cfg = self.env_cfgs[name]
         # copy seed
@@ -81,7 +83,9 @@ class TaskRegistry():
         if args is None:
             args = get_args()
         # check if there is a registered env with that name
+        print("Task classes are:{}".format(self.task_classes))
         if name in self.task_classes:
+            print("This task name is:{}".format(name))
             task_class = self.get_task_class(name)
         else:
             raise ValueError(f"Task with name: {name} was not registered")
@@ -144,6 +148,7 @@ class TaskRegistry():
             log_dir = os.path.join(log_root, datetime.now().strftime('%b%d_%H-%M-%S') + '_' + train_cfg.runner.run_name)
         
         train_cfg_dict = class_to_dict(train_cfg)
+        # create runner of policy and algorithm of training according to env and train config
         runner = OnPolicyRunner(env, train_cfg_dict, log_dir, device=args.rl_device)
         #save resume path before creating a new log_dir
         resume = train_cfg.runner.resume
@@ -156,3 +161,5 @@ class TaskRegistry():
 
 # make global task registry
 task_registry = TaskRegistry()
+
+
